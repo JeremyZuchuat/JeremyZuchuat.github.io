@@ -41,13 +41,27 @@ let ski_touring = [
 ];
 
 // Read array (ONLY SERVER)
+var data_ski_touring;
 
+function parse() {
+    var file_data_ski_touring = document.getElementById('./infos/info_touring.csv').files[0];
+
+    Papa.parse(file_data_ski_touring, {
+      header: false,
+      dynamicTyping: false,
+      complete: function(results) {
+        console.log("Finished:", results.data);
+        data_ski_touring = results.data;
+      }
+    });
+}
+/*
 var data_ski_touring = Papa.parse('./infos/info_touring.csv', {
     complete: function(results) {
         console.log(results);
     }
 });
-
+*/
 
 /*
 var data_ski_touring_import = $.get('./infos/info_touring.csv')
