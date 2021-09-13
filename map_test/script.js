@@ -53,11 +53,11 @@ async function getData(path) {
   console.log(rows);
 }
 
-getData('info_touring.csv')[1];
-
+getData('info_touring.csv');
+/*
 var data_touring = Papa.parse(getData('info_touring.csv'));
 console.log(data_touring);
-
+*/
 
 /*
 data_touring = getData('info_touring_test.csv');
