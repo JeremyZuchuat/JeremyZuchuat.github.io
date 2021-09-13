@@ -41,6 +41,7 @@ let ski_touring = [
 ];
 
 // Read array (ONLY SERVER)
+var check = 1
 var data_ski_touring;
 
     var file_data_ski_touring = document.getElementById('./infos/info_touring.csv').files[0];
