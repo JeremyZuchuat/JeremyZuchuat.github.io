@@ -42,9 +42,9 @@ let ski_touring = [
 
 // Read array (ONLY SERVER)
 
-var check = 99
+var check = 100
 
-fetch('./infos/info_touring.csv')
+fetch('https://jeremyzuchuat.github.io/map_test/infos/info_touring.csv')
   .then(response => response.text())
   .then((data_ski_touring) => {
     console.log(data_ski_touring)
