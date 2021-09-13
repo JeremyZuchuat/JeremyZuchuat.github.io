@@ -46,8 +46,8 @@ var check = 99
 
 fetch('./infos/info_touring.csv')
   .then(response => response.text())
-  .then((data) => {
-    console.log(data)
+  .then((data_ski_touring) => {
+    console.log(data_ski_touring)
 })
 
 
