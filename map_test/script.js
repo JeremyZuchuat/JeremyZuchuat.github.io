@@ -58,6 +58,7 @@ async function getData(path) {
 }
 
 getData('info_touring.csv');
+data;
 /*
 data_touring = getData('info_touring_test.csv');
 console.log(data_touring);
