@@ -57,7 +57,7 @@ async function getData(path) {
 */
 }
 
-let data_touring = await getData('info_touring.csv');
+let data_touring = getData('info_touring.csv');
 data_touring;
 1+1;
 /*
