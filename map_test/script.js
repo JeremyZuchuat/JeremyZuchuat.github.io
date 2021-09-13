@@ -44,7 +44,7 @@ let ski_touring = [
 async function getData() {
   const response = await fetch('info_touring.csv');
   const data = await response.text();
-  console.log(response);
+  console.log(data);
 }
 
 getData();
