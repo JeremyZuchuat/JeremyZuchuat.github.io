@@ -46,7 +46,12 @@ async function getData(path) {
   const data = await response.text();
   console.log(data);
 
-  const rows = data.split('\n');
+  const rows = data.split('\r').slice(1);
+  rows.forEach(elt => {
+    const row = elt.split(',');
+    console.log(row);
+  }
+)
   console.log(rows);
 }
 
