@@ -39,10 +39,9 @@ let ski_touring = [
     [45.87897, 7.15738, "Pointe de Drône (2949m)"],
     [45.89517, 7.07661, "Tête de Ferret (2713m)"]
 ];
-/*
+
 // Read array (ONLY SERVER)
 $.get('./info/info_touring.csv')
-*/
 
 // Create each marker
 for (var i = 0; i < ski_touring.length; i++) {
