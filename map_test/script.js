@@ -45,7 +45,8 @@ async function getData(path) {
   const response = await fetch(path);
   const data = await response.text();
   console.log(data);
-
+  return(data)
+/*
   const rows = data.split('\r').slice(1);
   rows.forEach(elt => {
     const row = elt.split(',');
@@ -53,6 +54,7 @@ async function getData(path) {
   }
 )
   console.log(rows);
+*/
 }
 
 getData('info_touring.csv');
