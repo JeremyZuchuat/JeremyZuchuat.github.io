@@ -41,7 +41,18 @@ let ski_touring = [
 ];
 
 // Read array (ONLY SERVER)
-var check = 1
+
+var check = 99
+
+fetch('./infos/info_touring.csv')
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+})
+
+
+
+/*
 var data_ski_touring;
 
     var file_data_ski_touring = document.getElementById('./infos/info_touring.csv').files[0];
@@ -54,6 +65,7 @@ var data_ski_touring;
         data_ski_touring = results.data;
       }
     });
+*/
 /*
 var data_ski_touring = Papa.parse('./infos/info_touring.csv', {
     complete: function(results) {
