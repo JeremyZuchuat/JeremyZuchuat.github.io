@@ -45,10 +45,12 @@ async function getData(path) {
   const response = await fetch(path);
   const data = await response.text();
   console.log(data);
+
+  const rows = data.split('\n');
+  console.log(rows);
 }
 
 getData('info_touring.csv');
-getData('info_touring_test.csv');
 /*
 data_touring = getData('info_touring_test.csv');
 console.log(data_touring);
