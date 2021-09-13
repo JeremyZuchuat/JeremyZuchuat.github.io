@@ -48,7 +48,6 @@ async function getData() {
   console.log(response);
 }
 
-console.log("FINAL TEST");
 data_touring = getData();
 console.log(data_touring);
 /*
