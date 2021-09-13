@@ -41,16 +41,15 @@ let ski_touring = [
 ];
 
 // Read array (ONLY SERVER)
-
-var check = 120
-
 async function getData() {
   const response = await fetch('info_touring.csv');
   const data = await response.text();
-  console.log(data);
 }
 
-getData();
+data_touring = getData();
+console.log(data_touring);
+
+
 /*
 fetch('./infos/info_touring.csv')
   .then(response => response.text())
