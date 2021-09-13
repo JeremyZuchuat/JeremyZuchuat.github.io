@@ -49,6 +49,7 @@ async function getData(file) {
   console.log(response);
 }
 
+console.log("FINAL TEST"");
 data_touring = getData('info_touring.csv');
 console.log(data_touring);
 /*
