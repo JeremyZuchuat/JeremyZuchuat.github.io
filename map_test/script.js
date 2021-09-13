@@ -42,6 +42,7 @@ let ski_touring = [
 
 // Read array (ONLY SERVER)
 var data_ski_touring = $.get('./infos/info_touring.csv')
+var data_ski_touring = $.csv.toObjects(data_ski_touring)
 
 // Create each marker
 for (var i = 0; i < ski_touring.length; i++) {
