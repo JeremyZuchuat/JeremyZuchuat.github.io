@@ -44,17 +44,13 @@ let ski_touring = [
 async function getData(path) {
   const response = await fetch(path);
   const data = await response.text();
-  console.log(data);
-  return(data)
-/*
-  const rows = data.split('\r').slice(1);
+  const rows = data.split('\n\r').slice(1);
   rows.forEach(elt => {
     const row = elt.split(',');
     console.log(row);
   }
 )
   console.log(rows);
-*/
 }
 
 getData('info_touring.csv')[1];
