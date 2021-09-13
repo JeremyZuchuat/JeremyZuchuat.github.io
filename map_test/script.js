@@ -45,12 +45,12 @@ let ski_touring = [
 var check = 120
 
 async function getData() {
-  const response = await fetch('./infos/info_touring.csv');
+  const response = await fetch('info_touring.csv');
   const data = await response.text();
   console.log(data);
 }
 
-getData()
+getData();
 /*
 fetch('./infos/info_touring.csv')
   .then(response => response.text())
