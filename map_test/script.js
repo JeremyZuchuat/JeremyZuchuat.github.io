@@ -57,9 +57,7 @@ async function getData(path) {
 */
 }
 
-let data_touring = getData('info_touring.csv');
-data_touring;
-1+1;
+getData('info_touring.csv')[1];
 /*
 data_touring = getData('info_touring_test.csv');
 console.log(data_touring);
