@@ -43,6 +43,7 @@ let ski_touring = [
 // Read array (ONLY SERVER)
 async function getData(file) {
   const response = await fetch(file);
+  console.log(response);
   const data = await response.text();
 }
 
