@@ -52,7 +52,7 @@ async function getData(path) {
   var table =  Papa.parse(data);
   var table = table.data
   console.log(table);
-  console.log(table[1][3],table[1][1],table[1][2]);
+  console.log(table[1][2],table[1][0],table[1][1]);
   /*
   const table = data.split('\r\n').slice(1);
   rows.forEach(elt => {
