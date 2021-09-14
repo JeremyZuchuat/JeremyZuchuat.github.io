@@ -49,6 +49,7 @@ async function getData(path) {
     const row = elt.split(';');
     const latitude = row[0];
     const longitude = row[1];
+    console.log("TEST:");
     console.log(latitude,longitude);
   });
 }
