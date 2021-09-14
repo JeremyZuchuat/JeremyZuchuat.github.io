@@ -57,7 +57,9 @@ async function getData(path) {
 
   // PARSE CSV
   console.log("PARSE TEXT CSV:");
-  var table =  Papa.parse(data);
+  var table =  Papa.parse(data,{
+    header : true;
+  });
   var table = table.data
   console.log(table);
   console.log(table[1][2],table[1][0],table[1][1]);
@@ -66,7 +68,8 @@ async function getData(path) {
   for (var i = 0; i < table.length; i++) {
 
       // Get marker's geolocalisation
-      var marker = L.marker([table[i][0], table[i][1]], {
+      // var marker = L.marker([table[i][0], table[i][1]], {
+      var marker = L.marker([table[i][8], table[i][9]], {
         icon: mountain_logo_blue
       }).addTo(mymap);
 
@@ -98,7 +101,7 @@ async function getData(path) {
   */
 }
 
-getData('info_touring.csv');
+getData('info_touring_full.csv');
 
 
 /*
