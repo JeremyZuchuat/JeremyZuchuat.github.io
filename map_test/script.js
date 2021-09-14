@@ -73,7 +73,7 @@ async function getData(path) {
       }).addTo(mymap);
 
       // Popup
-      marker.bindPopup("<b>" + table[i].Course + "</b>" + "(" + table[i].Elevation_max + ")");
+      marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
 
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
