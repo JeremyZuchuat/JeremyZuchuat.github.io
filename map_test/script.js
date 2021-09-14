@@ -72,7 +72,7 @@ async function getData(path) {
 
       // Get marker's geolocalisation
       // var marker = L.marker([table[i][0], table[i][1]], {
-      var marker = L.marker([table[i][8], table[i][9]], {
+      var marker = L.marker([table[i].Latitude, table[i].Longitude, {
         icon: mountain_logo_blue
       }).addTo(mymap);
 
