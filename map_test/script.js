@@ -65,7 +65,7 @@ async function getData(path) {
 
   console.log("SINGLE ELEMENT CSV:");
   console.log(table[1][2],table[1][0],table[1][1]);
-  console.log(table[1].Course);
+  console.log(table[13].Latitude,table[13].Longitude);
 
   // Create each marker
   for (var i = 0; i < table.length; i++) {
