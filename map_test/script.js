@@ -49,9 +49,8 @@ async function getData(path) {
   console.log(data);
   // PARSE CSV
   console.log("PARSE TEXT CSV::");
-  const table =  Papa.parse(data, {
-	                 header: true
-                 });
+  var table =  Papa.parse(data);
+  var table = table.data
   console.log(table);
   /*
   const table = data.split('\r\n').slice(1);
