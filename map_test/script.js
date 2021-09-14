@@ -42,10 +42,16 @@ let ski_touring = [
 
 // Read array (ONLY SERVER)
 async function getData(path) {
+    // IMPORT CSV
+  console.log("IMPORT TEXT CSV::");
   const response = await fetch(path);
   const data = await response.text();
-  console.log("IMPORT TEXT CSV::");
   console.log(data);
+  // PARSE CSV
+  console.log("PARSE TEXT CSV::");
+  const data = Papa.parse(data);
+  console.log(data);
+  /*
   const table = data.split('\r\n').slice(1);
   rows.forEach(elt => {
     const row = elt.split(';');
@@ -54,6 +60,7 @@ async function getData(path) {
     console.log("TEST:");
     console.log(latitude,longitude);
   });
+  */
 }
 
 getData('info_touring.csv');
