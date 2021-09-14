@@ -22,14 +22,26 @@ mymap.addLayer(tilelayer);
 
 // Define Markers Styles
 
-var mountain_logo = L.icon({
+var mountain_logo_red = L.icon({
     iconUrl: './icons/mountain_logo_red.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
-var mountain_logo_H = L.icon({
+var mountain_logo_red_H = L.icon({
     iconUrl: './icons/mountain_logo_red_light.png',
+    iconSize:     [35, 35], // size of the icon
+    popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
+});
+
+var mountain_logo_blue = L.icon({
+    iconUrl: './icons/mountain_logo_blue.png',
+    iconSize:     [35, 35], // size of the icon
+    popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
+});
+
+var mountain_logo_blue_H = L.icon({
+    iconUrl: './icons/mountain_logo_bluelight.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
@@ -119,7 +131,7 @@ for (var i = 0; i < ski_touring.length; i++) {
 
     // Get marker's geolocalisation
     var marker = L.marker([ski_touring[i][0], ski_touring[i][1]], {
-      icon: mountain_logo
+      icon: mountain_logo_red
     }).addTo(mymap);
 
     // Popup
@@ -128,13 +140,13 @@ for (var i = 0; i < ski_touring.length; i++) {
     // Marker mouseover : Highlight
     marker.on('mouseover', function(e) {
       this.openPopup();
-      e.target.setIcon(mountain_logo_H);
+      e.target.setIcon(mountain_logo_red_H);
     });
 
     // Marker mouseout : De-Highlight
     marker.on('mouseout', function(e) {
       this.closePopup();
-      e.target.setIcon(mountain_logo);
+      e.target.setIcon(mountain_logo_red);
     });
 
 }
