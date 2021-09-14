@@ -46,12 +46,6 @@ var mountain_logo_blue_H = L.icon({
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
-// Array
-let ski_touring = [
-    [45.87897, 7.15738, "Pointe de Drône (2949m)"],
-    [45.89517, 7.07661, "Tête de Ferret (2713m)"]
-];
-
 // Read array (ONLY SERVER)
 async function getData(path) {
 
@@ -105,54 +99,19 @@ async function getData(path) {
 }
 
 getData('info_touring.csv');
-/*
-var data_touring = Papa.parse(getData('info_touring.csv'));
-console.log(data_touring);
-*/
-
-/*
-data_touring = getData('info_touring_test.csv');
-console.log(data_touring);
-*/
-
-/*
-fetch('./infos/info_touring.csv')
-  .then(response => response.text())
-  .then((data) => {
-    console.log(data)
-    var data_ski_touring = data
-  })
-*/
-
 
 
 /*
-var data_ski_touring;
 
-    var file_data_ski_touring = document.getElementById('./infos/info_touring.csv').files[0];
+********
+*** MANUALLY ADD MARKERS
+********
+// Array
+let ski_touring = [
+    [45.87897, 7.15738, "Pointe de Drône (2949m)"],
+    [45.89517, 7.07661, "Tête de Ferret (2713m)"]
+];
 
-    Papa.parse(file_data_ski_touring, {
-      header: false,
-      dynamicTyping: false,
-      complete: function(results) {
-        console.log("Finished:", results.data);
-        data_ski_touring = results.data;
-      }
-    });
-*/
-/*
-var data_ski_touring = Papa.parse('./infos/info_touring.csv', {
-    complete: function(results) {
-        console.log(results);
-    }
-});
-*/
-
-/*
-var data_ski_touring_import = $.get('./infos/info_touring.csv')
-  console.log(data_ski_touring_import);
-var data_ski_touring_array = $.csv.toObjects(data_ski_touring_import)
-*/
 // Create each marker
 for (var i = 0; i < ski_touring.length; i++) {
 
@@ -177,21 +136,8 @@ for (var i = 0; i < ski_touring.length; i++) {
     });
 
 }
-
-/*
-marker_i = L.marker([45.87897, 7.15738], {icon: mountain_logo}).addTo(mymap).bindPopup("Pointe de Drône (2949m)");
-
-// Mouseover LAYER
-marker_i.on('mouseover', function(e) {
-  this.openPopup();
-  e.target.setIcon(mountain_logo_H); //marker object is overwritten in the for loop each time
-});
-
-marker_i.on('mouseout', function(e) {
-  this.closePopup();
-  e.target.setIcon(mountain_logo);
-});
 */
+
 
 
 //---------------------------------------------------------------------------------------------------------------------------------
