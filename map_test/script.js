@@ -78,6 +78,7 @@ async function getData(path) {
       // Click
       marker.on('click', function(e) {
         e.target.setIcon(mountain_logo_red_H);
+        marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
       }
 
       // Marker mouseover : Highlight
