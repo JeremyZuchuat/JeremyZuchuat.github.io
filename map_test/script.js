@@ -41,7 +41,7 @@ var mountain_logo_blue = L.icon({
 });
 
 var mountain_logo_blue_H = L.icon({
-    iconUrl: './icons/mountain_logo_bluelight.png',
+    iconUrl: './icons/mountain_logo_blue_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
@@ -62,7 +62,7 @@ async function getData(path) {
   console.log(data);
 
   // PARSE CSV
-  console.log("PARSE TEXT CSV::");
+  console.log("PARSE TEXT CSV:");
   var table =  Papa.parse(data);
   var table = table.data
   console.log(table);
