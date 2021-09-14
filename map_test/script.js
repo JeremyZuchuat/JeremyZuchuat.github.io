@@ -46,11 +46,11 @@ async function getData(path) {
   const data = await response.text();
   const rows = data.split('\r\n').slice(1);
   rows.forEach(elt => {
-    const row = elt.split(';').map(Number);
-    console.log(row);
-  }
-)
-  console.log(rows);
+    const row = elt.split(';');
+    const latitude = row[0];
+    const longitude = row[1];
+    console.log(latitude,longitude);
+  });
 }
 
 getData('info_touring.csv');
