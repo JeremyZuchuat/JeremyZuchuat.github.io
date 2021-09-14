@@ -54,17 +54,44 @@ let ski_touring = [
 
 // Read array (ONLY SERVER)
 async function getData(path) {
+
     // IMPORT CSV
   console.log("IMPORT TEXT CSV::");
   const response = await fetch(path);
   const data = await response.text();
   console.log(data);
+
   // PARSE CSV
   console.log("PARSE TEXT CSV::");
   var table =  Papa.parse(data);
   var table = table.data
   console.log(table);
   console.log(table[1][2],table[1][0],table[1][1]);
+
+  // Create each marker
+  for (var i = 0; i < table.length; i++) {
+
+      // Get marker's geolocalisation
+      var marker = L.marker([table[i][0], table[i][1]], {
+        icon: mountain_logo_blue
+      }).addTo(mymap);
+
+      // Popup
+      marker.bindPopup("<b>" + table[i][2] + "</b>");
+
+      // Marker mouseover : Highlight
+      marker.on('mouseover', function(e) {
+        this.openPopup();
+        e.target.setIcon(mountain_logo_blue_H);
+      });
+
+      // Marker mouseout : De-Highlight
+      marker.on('mouseout', function(e) {
+        this.closePopup();
+        e.target.setIcon(mountain_logo_blue);
+      });
+
+  }
   /*
   const table = data.split('\r\n').slice(1);
   rows.forEach(elt => {
