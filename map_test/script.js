@@ -100,7 +100,7 @@ async function getData(path) {
   */
 }
 
-getData('info_touring_full.csv');
+getData('info_touring.csv');
 
 
 /*
