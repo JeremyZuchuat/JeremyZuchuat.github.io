@@ -63,10 +63,6 @@ async function getData(path) {
   var table = table.data
   console.log(table);
 
-  console.log("SINGLE ELEMENT CSV:");
-  console.log(table[1][2],table[1][0],table[1][1]);
-  console.log(table[13].Latitude,table[13].Longitude);
-
   // Create each marker
   for (var i = 0; i < table.length; i++) {
 
@@ -77,7 +73,7 @@ async function getData(path) {
       }).addTo(mymap);
 
       // Popup
-      marker.bindPopup("<b>" + table[i][2] + "</b>");
+      marker.bindPopup("<b>" + table[i].Course + "</b>" + "(" + table[i].Elevation_max + ")");
 
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
