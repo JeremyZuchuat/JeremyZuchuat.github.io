@@ -44,6 +44,8 @@ let ski_touring = [
 async function getData(path) {
   const response = await fetch(path);
   const data = await response.text();
+  console.log("IMPORT TEXT CSV::");
+  console.log(data);
   const rows = data.split('\r\n').slice(1);
   rows.forEach(elt => {
     const row = elt.split(';');
