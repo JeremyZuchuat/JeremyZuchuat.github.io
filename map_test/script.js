@@ -62,7 +62,10 @@ async function getData(path) {
   });
   var table = table.data
   console.log(table);
+
+  console.log("SINGLE ELEMENT CSV:");
   console.log(table[1][2],table[1][0],table[1][1]);
+  console.log(table[1].Course);
 
   // Create each marker
   for (var i = 0; i < table.length; i++) {
