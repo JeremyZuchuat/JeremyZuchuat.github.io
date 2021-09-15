@@ -110,11 +110,24 @@ async function getData(path) {
 
 getData('info_touring.csv');
 
-// GPX
+async function getGPX(path) {
 
-console.log("GPX parsed");
-var gpx = new gpxParser();
-console.log(gpx);
+    // IMPORT GPX
+  console.log("IMPORT GPX:");
+  const response = await fetch(path);
+  const data_gpx = await response.text();
+  console.log(data_gpx);
+
+  // GPX
+  console.log("GPX LEAFLET");
+  var gpx = ''; // URL to your GPX file or the GPX itself
+  new L.GPX(gpx, {async: true}).on('loaded', function(e) {
+    mymap.fitBounds(e.target.getBounds());
+  }).addTo(mymap);
+}
+
+
+
 /*
 gpx_parsed = gpx.parse("<xml><gpx></gpx></xml>");
 console.log(gpx_parsed);
