@@ -85,14 +85,14 @@ async function getData(path) {
       marker.on('mouseover', function(e) {
         this.openPopup();
         // e.target.setIcon(mountain_logo_blue_H);
-        L.DomUtil.addClass(e.target.getElement(), 'leaflet-marker-hover');
+        marker.addClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
       // Marker mouseout : De-Highlight
       marker.on('mouseout', function(e) {
         this.closePopup();
         // e.target.setIcon(mountain_logo_blue);
-        L.DomUtil.removeClass(e.target.getElement(), 'leaflet-marker-hover');
+        marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
   }
