@@ -5,12 +5,12 @@
 }
 
 .leaflet-marker-icon {
-    opacity: 0.5;
+    opacity: 1;
+    transition-duration: 1s;
 }
 .leaflet-marker-hover {
     transition-property: opacity;
-    transition-duration: 1s;
-    opacity: 1;
+    opacity: 0.5;
 }
 
 /*
