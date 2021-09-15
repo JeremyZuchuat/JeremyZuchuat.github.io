@@ -126,6 +126,8 @@ async function getGPX(path) {
   }).addTo(mymap);
 }
 
+getGPX('GPX/2020_01_24_la_fava.gpx');
+
 
 
 /*
