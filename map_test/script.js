@@ -74,6 +74,12 @@ async function getData(path) {
 
       // Popup
       marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
+
+      // GPX
+      var gpx = 'GPX/2020_01_24_la_fava.gpx';
+      new L.GPX(gpx, {async: true}).on('loaded', function(e) {
+        map.fitBounds(e.target.getBounds());
+      }).addTo(map);
 /*
       // Click
       marker.on('click', function(e) {
