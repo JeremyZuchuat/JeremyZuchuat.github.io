@@ -1,4 +1,7 @@
 
+console.log("GPXParser.js loaded")
+
+
 /**
  * GPX file parser
  *
