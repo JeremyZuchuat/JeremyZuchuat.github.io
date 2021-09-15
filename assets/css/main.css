@@ -7,7 +7,28 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/***************************************************************************************************************************************
+***************************************************************************************************************************************/
+
+/*****
+** VARIABLES
+*****/
+
 :root {
+	/* A. TRANSITION */
+
+	/* A1. BANNER */
+	--tr_banner_delay_home_p : 0.7s;
+	--tr_banner_delay_home_h1 : 0.3s;
+	--tr_banner_time_home : 1.0s;
+
+	--tr_banner_delay_p : 0.5s;
+	--tr_banner_delay_h1 : 0.2s;
+	--tr_banner_time : 1.0s;
+
+	/* A2. BUTTONS */
+	--tr-button : 0.25s;
+
 	/* Header color */
 	--header_color : rgba(40, 45, 50, 0.4);
 	/* Color Buttons */
@@ -35,6 +56,9 @@
 	--color_icon_highlight_1 :  rgba(180,210,230,0.7);
 	--color_icon_highlight_2 :  rgba(100,125,150,0.7);
 }
+
+/***************************************************************************************************************************************
+***************************************************************************************************************************************/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2106,6 +2130,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		position: relative;
+
 		height: 24em;
 		background: url("../../images/banner.jpg") center;
 		background-size: cover;
@@ -2126,9 +2151,15 @@ input, select, textarea {
 			height: 35em;
 		}
 
-/* Logo */
+/***************************************************************************************************************************************
+***************************************************************************************************************************************/
 
-#logo {
+/****
+** A. BANNER
+*****/
+
+/* MAIN */
+#banner_text {
 		width: 40%;
 		text-align: justify;
 		position: relative;
@@ -2137,7 +2168,8 @@ input, select, textarea {
 		padding: 2em 0em 2em 0em;
 }
 
-#logo h1 {
+/* h1 */
+#banner_text h1 {
 		text-align: center;
 		font-weight: 900;
 	/*	text-transform: uppercase;*/
@@ -2146,9 +2178,42 @@ input, select, textarea {
 		font-size: 2em;
 		letter-spacing: 0.25em;
 		padding: 0em 0em 0em 0em;
+
+		/* TRANSITION */
+		-moz-transition: opacity var(--tr_banner_time) ease, -moz-transform var(--tr_banner_time) ease, -moz-filter 0.25s ease;
+		-webkit-transition: opacity var(--tr_banner_time) ease, -webkit-transform var(--tr_banner_time) ease, -webkit-filter 0.25s ease;
+		-ms-transition: opacity var(--tr_banner_time) ease, -ms-transform var(--tr_banner_time) ease, -ms-filter 0.25s ease;
+		transition: opacity var(--tr_banner_time) ease, transform var(--tr_banner_time) ease, filter 0.25s ease;
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transition-delay: var(--tr_banner_delay_h1);
+		-webkit-transition-delay: var(--tr_banner_delay_h1);
+		-ms-transition-delay: var(--tr_banner_delay_h1);
+		transition-delay: var(--tr_banner_delay_h1);
+		-moz-filter: blur(0);
+		-webkit-filter: blur(0);
+		-ms-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
 }
 
-#logo p {
+body.is-preload #banner_text h1 {
+	opacity: 0;
+	-moz-transform: translateX(0.25em);
+	-webkit-transform: translateX(0.25em);
+	-ms-transform: translateX(0.25em);
+	transform: translateX(0.25em);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+/* p */
+
+#banner_text p {
 		color: #eee;
 		color: rgba(255, 255, 255, 1);
 		text-transform: uppercase;
@@ -2157,11 +2222,45 @@ input, select, textarea {
 		letter-spacing: 0.2em;
 		font-size: 0.9em;
 		padding: 0em 0em 0em 0em;
+
+		/* TRANSITION */
+		-moz-transition: opacity var(--tr_banner_time) ease, -moz-transform var(--tr_banner_time) ease, -moz-filter 0.25s ease;
+		-webkit-transition: opacity var(--tr_banner_time) ease, -webkit-transform var(--tr_banner_time) ease, -webkit-filter 0.25s ease;
+		-ms-transition: opacity var(--tr_banner_time) ease, -ms-transform var(--tr_banner_time) ease, -ms-filter 0.25s ease;
+		transition: opacity var(--tr_banner_time) ease, transform var(--tr_banner_time) ease, filter 0.25s ease;
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transition-delay: var(--tr_banner_delay_p);
+		-webkit-transition-delay: var(--tr_banner_delay_p);
+		-ms-transition-delay: var(--tr_banner_delay_p);
+		transition-delay: var(--tr_banner_delay_p);
+		-moz-filter: blur(0);
+		-webkit-filter: blur(0);
+		-ms-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
 }
 
-/* Logo homepage */
+body.is-preload #banner_text p {
+	opacity: 0;
+	-moz-transform: translateX(0.25em);
+	-webkit-transform: translateX(0.25em);
+	-ms-transform: translateX(0.25em);
+	transform: translateX(0.25em);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
 
-#logo_home {
+/****
+** B. BANNER HOME PAGE
+*****/
+
+/* MAIN */
+#banner_text_home {
 		width: 65%;
 		text-align: justify;
 		position: relative;
@@ -2170,18 +2269,51 @@ input, select, textarea {
 		padding: 2em 0em 2em 0em;
 }
 
-#logo_home h1 {
+/* H1 */
+#banner_text_home h1 {
 		text-align: center;
 		font-weight: 900;
-	/*	text-transform: uppercase;*/
 		font-variant: small-caps;
 		color: #fff;
 		font-size: 2em;
 		letter-spacing: 0.25em;
 		padding: 0em 0em 0.5em 0em;
+
+		/* TRANSITION */
+		-moz-transition: opacity var(--tr_banner_time_home) ease, -moz-transform var(--tr_banner_time_home) ease, -moz-filter 0.25s ease;
+		-webkit-transition: opacity var(--tr_banner_time_home) ease, -webkit-transform var(--tr_banner_time_home) ease, -webkit-filter 0.25s ease;
+		-ms-transition: opacity var(--tr_banner_time_home) ease, -ms-transform var(--tr_banner_time_home) ease, -ms-filter 0.25s ease;
+		transition: opacity var(--tr_banner_time_home) ease, transform var(--tr_banner_time_home) ease, filter 0.25s ease;
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transition-delay: var(--tr_banner_delay_home_h1);
+		-webkit-transition-delay: var(--tr_banner_delay_home_h1);
+		-ms-transition-delay: var(--tr_banner_delay_home_h1);
+		transition-delay: var(--tr_banner_delay_home_h1);
+		-moz-filter: blur(0);
+		-webkit-filter: blur(0);
+		-ms-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
 }
 
-#logo_home p {
+body.is-preload #banner_text_home h1 {
+	opacity: 0;
+	-moz-transform: translateX(0.25em);
+	-webkit-transform: translateX(0.25em);
+	-ms-transform: translateX(0.25em);
+	transform: translateX(0.25em);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+/* p */
+
+#banner_text_home p {
 		color: #eee;
 		color: rgba(255, 255, 255, 1);
 		text-transform: uppercase;
@@ -2190,7 +2322,41 @@ input, select, textarea {
 		letter-spacing: 0.2em;
 		font-size: 0.9em;
 		padding: 0em 2em 0em 2em;
+
+		/* TRANSITION */
+		-moz-transition: opacity var(--tr_banner_time_home) ease, -moz-transform var(--tr_banner_time_home) ease, -moz-filter 0.25s ease;
+		-webkit-transition: opacity var(--tr_banner_time_home) ease, -webkit-transform var(--tr_banner_time_home) ease, -webkit-filter 0.25s ease;
+		-ms-transition: opacity var(--tr_banner_time_home) ease, -ms-transform var(--tr_banner_time_home) ease, -ms-filter 0.25s ease;
+		transition: opacity var(--tr_banner_time_home) ease, transform var(--tr_banner_time_home) ease, filter 0.25s ease;
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		-moz-transition-delay: var(--tr_banner_delay_home_p);
+		-webkit-transition-delay: var(--tr_banner_delay_home_p);
+		-ms-transition-delay: var(--tr_banner_delay_home_p);
+		transition-delay: var(--tr_banner_delay_home_p);
+		-moz-filter: blur(0);
+		-webkit-filter: blur(0);
+		-ms-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
 }
+
+body.is-preload #banner_text_home p {
+	opacity: 0;
+	-moz-transform: translateX(0.25em);
+	-webkit-transform: translateX(0.25em);
+	-ms-transform: translateX(0.25em);
+	transform: translateX(0.25em);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+/***************************************************************************************************************************************
+***************************************************************************************************************************************/
 
 /* Nav */
 
@@ -2553,13 +2719,13 @@ input, select, textarea {
 		/* Wrapper */
 
 
-		/* Logo */
+		/* Banner */
 
-			#logo {
+			#banner_text {
 				margin-top: -0.5em !important;
 			}
 
-				#logo h1 {
+				#banner_text h1 {
 					font-size: 1.75em;
 				}
 
@@ -2639,9 +2805,9 @@ input, select, textarea {
 				display: none;
 			}
 
-		/* Logo */
+		/* Banner */
 
-			#logo {
+			#banner_text {
 				top: 0;
 			}
 
@@ -2993,20 +3159,20 @@ input, select, textarea {
 					height: 20em;
 				}
 
-		/* Logo */
+		/* Banner */
 
-			#logo {
+			#banner_text {
 				text-align: center;
 				padding-left: 2em;
 				padding-right: 2em;
 			}
 
-				#logo h1 {
+				#banner_text h1 {
 					font-size: 1.5em;
 					letter-spacing: 0.2em;
 				}
 
-				#logo p {
+				#banner_text p {
 					margin: 1.25em 0 0 0;
 					display: block;
 					letter-spacing: 0.2em;
@@ -3113,10 +3279,12 @@ input, select, textarea {
 		margin: 0em 0em 0em 0em;
 		border-radius: 50%;
 		margin: 0 20px 3px 0;
+		transition: var(--tr-button);
 	}
 
 	.fa:hover {
 		background: var(--button_color_1b) url("images/overlay.png");
+
 	}
 
 	.fas {
@@ -3130,6 +3298,7 @@ input, select, textarea {
 		margin: 0em 0em 0em 0em;
 		border-radius: 50%;
 		margin: 0 20px 3px 0;
+		transition: var(--tr-button);
 	}
 
 	.fas:hover {
@@ -3145,6 +3314,7 @@ input, select, textarea {
 		margin: 0em 0em 0em 0em;
 		border-radius: 50%;
 		margin: 0 20px 3px 0;
+		transition: var(--tr-button);
 	}
 
 	.fab:hover {
