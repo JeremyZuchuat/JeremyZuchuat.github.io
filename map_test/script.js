@@ -121,10 +121,10 @@ async function getGPX(path) {
   console.log(data_gpx);
 
   var gpx = new gpxParser();
-  gpx.parse("<xml><gpx></gpx></xml>");
+  gpx_parsed= gpx.parse("<xml><gpx></gpx></xml>");
   // gpx.parse(data_gpx);
   console.log("GPX parsed");
-  console.log(gpx.parse("<xml><gpx></gpx></xml>"));
+  console.log(gpx_parsed);
 }
 
 getGPX('GPX/2020_01_24_la_fava.gpx');
