@@ -121,8 +121,9 @@ async function getGPX(path) {
   console.log(data_gpx);
 
   var gpx = new gpxParser();
-  gpx.parse(data_gpx);
-  console.log(gpx.parse(data_gpx));
+  gpx.parse("<xml><gpx></gpx></xml>");
+  // gpx.parse(data_gpx);
+  console.log(gpx.parse("<xml><gpx></gpx></xml>"));
 
 }
 
