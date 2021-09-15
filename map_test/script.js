@@ -114,9 +114,11 @@ getData('info_touring.csv');
 
 console.log("GPX parsed");
 var gpx = new gpxParser();
+console.log(gpx);
+/*
 gpx_parsed = gpx.parse("<xml><gpx></gpx></xml>");
 console.log(gpx_parsed);
-
+*/
 /*
 async function getGPX(path) {
 
