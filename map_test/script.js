@@ -112,7 +112,7 @@ getData('info_touring.csv');
 
 // GPX
 
-async function getData(path) {
+async function getGPX(path) {
 
     // IMPORT CSV
   console.log("IMPORT GPX:");
@@ -125,6 +125,8 @@ async function getData(path) {
   console.log(gpx.parse(data_gpx));
 
 }
+
+getGPX
 
 // var gpx = 'GPX/2020_01_24_la_fava.gpx';
 /*
