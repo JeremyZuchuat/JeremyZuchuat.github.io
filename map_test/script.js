@@ -112,23 +112,26 @@ getData('info_touring.csv');
 
 // GPX
 
+console.log("GPX parsed");
+var gpx = new gpxParser();
+gpx_parsed= gpx.parse("<xml><gpx></gpx></xml>");
+
+/*
 async function getGPX(path) {
 
-    // IMPORT CSV
+    // IMPORT GPX
   console.log("IMPORT GPX:");
   const response = await fetch(path);
   const data_gpx = await response.text();
   console.log(data_gpx);
 
-  var gpx = new gpxParser();
-  gpx_parsed= gpx.parse("<xml><gpx></gpx></xml>");
   // gpx.parse(data_gpx);
   console.log("GPX parsed");
   console.log(gpx_parsed);
 }
 
 getGPX('GPX/2020_01_24_la_fava.gpx');
-
+*/
 // var gpx = 'GPX/2020_01_24_la_fava.gpx';
 /*
 new L.GPX(gpx, {async: true}).on('loaded', function(e) {
