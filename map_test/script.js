@@ -94,7 +94,7 @@ async function getData(path) {
         this.closePopup();
         // e.target.setIcon(mountain_logo_blue);
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
-        e.target.removeClass('leaflet-marker-hover'); 
+        e.target.removeClass('leaflet-marker-hover');
       });
 
   }
