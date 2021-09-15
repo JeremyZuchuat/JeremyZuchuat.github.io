@@ -126,7 +126,7 @@ async function getGPX(path) {
 
 }
 
-getGPX
+getGPX('GPX/2020_01_24_la_fava.gpx');
 
 // var gpx = 'GPX/2020_01_24_la_fava.gpx';
 /*
