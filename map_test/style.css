@@ -7,9 +7,9 @@
 .leaflet-marker-icon {
     opacity: 1;
     transition-duration: 1s;
+    transition-property: opacity;
 }
 .leaflet-marker-hover {
-    transition-property: opacity;
     opacity: 0.5;
 }
 
