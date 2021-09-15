@@ -50,7 +50,7 @@ var mountain_logo_blue_H = L.icon({
 async function getData(path) {
 
     // IMPORT CSV
-  console.log("IMPORT TEXT CSV::");
+  console.log("IMPORT TEXT CSV:");
   const response = await fetch(path);
   const data = await response.text();
   console.log(data);
@@ -111,8 +111,22 @@ async function getData(path) {
 getData('info_touring.csv');
 
 // GPX
-var gpx = 'GPX/2020_01_24_la_fava.gpx';
-console.log(gpx)
+
+async function getData(path) {
+
+    // IMPORT CSV
+  console.log("IMPORT GPX:");
+  const response = await fetch(path);
+  const data_gpx = await response.text();
+  console.log(data_gpx);
+
+  var gpx = new gpxParser();
+  gpx.parse(data_gpx);
+  console.log(gpx.parse(data_gpx));
+
+}
+
+// var gpx = 'GPX/2020_01_24_la_fava.gpx';
 /*
 new L.GPX(gpx, {async: true}).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
