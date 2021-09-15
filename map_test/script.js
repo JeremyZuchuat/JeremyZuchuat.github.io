@@ -112,10 +112,11 @@ getData('info_touring.csv');
 
 // GPX
 var gpx = 'GPX/2020_01_24_la_fava.gpx';
+/*
 new L.GPX(gpx, {async: true}).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
-
+*/
 
 /*
 
