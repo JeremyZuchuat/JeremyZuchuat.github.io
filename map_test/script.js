@@ -96,8 +96,10 @@ async function getData(path) {
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
-  // GPX
 
+/*
+
+  // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
 
   var path_gpx = "GPX/" + table[i].File + ".gpx";
   console.log(path_gpx);
@@ -116,6 +118,8 @@ async function getData(path) {
       }).addTo(mymap);
 
   }
+*/
+
 }
 
 getData('info_touring.csv');
