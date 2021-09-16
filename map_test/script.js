@@ -96,15 +96,12 @@ async function getData(path) {
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
+      // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
+      /*
+      var path_gpx = "GPX/Simplified/" + table[i].File + ".gpx";
+      console.log(path_gpx);
 
-
-
-  // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
-
-  var path_gpx = "GPX/Simplified/" + table[i].File + ".gpx";
-  console.log(path_gpx);
-
-  // IMPORT GPX
+      // IMPORT GPX
       console.log("IMPORT GPX:");
       const response_gpx = await fetch(path_gpx);
       const data_gpx = await response_gpx.text();
@@ -116,9 +113,9 @@ async function getData(path) {
       new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
         // mymap.fitBounds(e.target.getBounds());
       }).addTo(mymap);
+      */
 
-  }
-
+    }
 
 }
 
