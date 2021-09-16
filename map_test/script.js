@@ -113,7 +113,6 @@ async function getData(path) {
       new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
         mymap.fitBounds(e.target.getBounds());
       }).addTo(mymap);
-      }
 
   }
 
