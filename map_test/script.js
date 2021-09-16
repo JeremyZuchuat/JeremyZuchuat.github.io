@@ -120,6 +120,12 @@ async function getData(path) {
           startIconUrl: false,
           endIconUrl: false,
           shadowUrl: false
+        },
+        polyline_options: {
+          color: 'green',
+          opacity: 0.75,
+          weight: 3,
+          lineCap: 'round'
         }
       }).addTo(mymap);
 
