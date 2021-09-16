@@ -103,7 +103,7 @@ async function getData(path) {
 
   // IMPORT GPX
       console.log("IMPORT GPX:");
-      const response_gpx = await fetch(path);
+      const response_gpx = await fetch(path_gpx);
       const data_gpx = await response_gpx.text();
       console.log(data_gpx);
 
