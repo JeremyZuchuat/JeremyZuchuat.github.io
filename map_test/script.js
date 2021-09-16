@@ -82,6 +82,12 @@ async function getData(path) {
         marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
       });
 */
+
+      // Click
+      marker.on('click', function(e) {
+        window.location = 'https://jeremyzuchuat.github.io';
+      })
+
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
         this.openPopup();
