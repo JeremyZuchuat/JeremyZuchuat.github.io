@@ -109,9 +109,12 @@ async function getData(path) {
       // GPX
       console.log("GPX LEAFLET");
       // var gpx = ''; // URL to your GPX file or the GPX itself
+      /*
       new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
         mymap.fitBounds(e.target.getBounds());
       }).addTo(mymap);
+      */
+      new L.GPX(data_gpx, {async: true}).addTo(mymap);
 
     }
 
