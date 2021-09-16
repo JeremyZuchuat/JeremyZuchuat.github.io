@@ -63,12 +63,13 @@ async function getData(path) {
   var table = table.data
   console.log(table);
 
-  // Create each marker
+  // MARKERS AND GPX
   for (var i = 0; i < table.length; i++) {
 
+  // MARKERS
+
       // Get marker's geolocalisation
-      // var marker = L.marker([table[i][0], table[i][1]], {
-      var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+            var marker = L.marker([table[i].Latitude, table[i].Longitude], {
         icon: mountain_logo_blue
       }).addTo(mymap);
 
@@ -95,7 +96,28 @@ async function getData(path) {
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
+  // GPX
+
+
+  path_gpx = 'GPX/2021_04_02_mont_blanc_de_cheilon.gpx'
+
+  // IMPORT GPX
+      console.log("IMPORT GPX:");
+      const response = await fetch(path);
+      const data_gpx = await response.text();
+      console.log(data_gpx);
+
+      // GPX
+      console.log("GPX LEAFLET");
+      // var gpx = ''; // URL to your GPX file or the GPX itself
+      new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
+        mymap.fitBounds(e.target.getBounds());
+      }).addTo(mymap);
+      }
+
   }
+
+
   /*
   const table = data.split('\r\n').slice(1);
   rows.forEach(elt => {
