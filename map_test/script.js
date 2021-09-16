@@ -124,7 +124,7 @@ async function getData(path) {
         polyline_options: {
           // color: 'green',
           color: 'rgb(30, 110, 180)',
-          opacity: 0.75,
+          opacity: 0.9,
           weight: 3,
           lineCap: 'round'
         }
