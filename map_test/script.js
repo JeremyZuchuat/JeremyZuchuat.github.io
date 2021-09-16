@@ -99,12 +99,12 @@ async function getData(path) {
   // GPX
 
 
-  path_gpx = 'GPX/2021_04_02_mont_blanc_de_cheilon.gpx'
+  var path_gpx = 'GPX/2021_04_02_mont_blanc_de_cheilon.gpx'
 
   // IMPORT GPX
       console.log("IMPORT GPX:");
-      const response = await fetch(path);
-      const data_gpx = await response.text();
+      const response_gpx = await fetch(path);
+      const data_gpx = await response_gpx.text();
       console.log(data_gpx);
 
       // GPX
@@ -115,22 +115,11 @@ async function getData(path) {
       }).addTo(mymap);
 
   }
-
-
-  /*
-  const table = data.split('\r\n').slice(1);
-  rows.forEach(elt => {
-    const row = elt.split(';');
-    const latitude = row[0];
-    const longitude = row[1];
-    console.log("TEST:");
-    console.log(latitude,longitude);
-  });
-  */
 }
 
 getData('info_touring.csv');
 
+/*
 async function getGPX(path) {
 
     // IMPORT GPX
@@ -148,7 +137,7 @@ async function getGPX(path) {
 }
 
 getGPX('GPX/2020_01_24_la_fava.gpx');
-
+*/
 
 
 /*
