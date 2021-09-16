@@ -97,7 +97,7 @@ async function getData(path) {
       });
 
       // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
-      /*
+
       var path_gpx = "GPX/Simplified/" + table[i].File + ".gpx";
       console.log(path_gpx);
 
@@ -106,7 +106,7 @@ async function getData(path) {
       const response_gpx = await fetch(path_gpx);
       const data_gpx = await response_gpx.text();
       console.log(data_gpx);
-
+/*
       // GPX
       console.log("GPX LEAFLET");
       // var gpx = ''; // URL to your GPX file or the GPX itself
