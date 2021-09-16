@@ -99,7 +99,7 @@ async function getData(path) {
   // GPX
 
 
-  var path_gpx = 'GPX/2021_04_02_mont_blanc_de_cheilon.gpx'
+  var path_gpx = table[i].File
 
   // IMPORT GPX
       console.log("IMPORT GPX:");
