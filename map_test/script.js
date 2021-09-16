@@ -116,9 +116,11 @@ async function getData(path) {
       */
       new L.GPX(data_gpx, {
         async: true,
-        wptIconUrls: false,
-        startIconUrl: false,
-        endIconUrl: false
+        marker_options: {
+          startIconUrl: false,
+          endIconUrl: false,
+          shadowUrl: false
+        }
       }).addTo(mymap);
 
 
