@@ -97,11 +97,11 @@ async function getData(path) {
       });
 
 
-/*
+
 
   // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
 
-  var path_gpx = "GPX/" + table[i].File + ".gpx";
+  var path_gpx = "GPX/Simplified/" + table[i].File + ".gpx";
   console.log(path_gpx);
 
   // IMPORT GPX
@@ -118,7 +118,7 @@ async function getData(path) {
       }).addTo(mymap);
 
   }
-*/
+
 
 }
 
