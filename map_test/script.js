@@ -114,7 +114,13 @@ async function getData(path) {
         mymap.fitBounds(e.target.getBounds());
       }).addTo(mymap);
       */
-      new L.GPX(data_gpx, {async: true}).addTo(mymap);
+      new L.GPX(data_gpx, {
+        async: true,
+        wptIconUrls: false,
+        startIconUrl: false,
+        endIconUrl: false
+      }).addTo(mymap);
+
 
     }
 
