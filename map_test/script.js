@@ -99,7 +99,7 @@ async function getData(path) {
   // GPX
 
 
-  var path_gpx = "GPX" + table[i].File;
+  var path_gpx = "GPX/" + table[i].File;
   console.log(path_gpx);
 
   // IMPORT GPX
