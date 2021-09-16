@@ -70,7 +70,7 @@ async function getData(path) {
 
       // Get marker's geolocalisation
             var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-        icon: mountain_logo_blue
+        icon: mountain_logo_red
       }).addTo(mymap);
 
       // Popup
@@ -85,14 +85,14 @@ async function getData(path) {
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
         this.openPopup();
-        e.target.setIcon(mountain_logo_blue_H);
+        e.target.setIcon(mountain_logo_red_H);
         // marker.addClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
       // Marker mouseout : De-Highlight
       marker.on('mouseout', function(e) {
         this.closePopup();
-        e.target.setIcon(mountain_logo_blue);
+        e.target.setIcon(mountain_logo_red);
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
@@ -123,8 +123,9 @@ async function getData(path) {
         },
         polyline_options: {
           // color: 'green',
-          color: 'rgb(60, 140, 220)',
-          opacity: 0.95,
+          // color: 'rgb(60, 140, 220)',
+          color: 'rgb(230, 70, 70)',
+          opacity: 0.90,
           weight: 3,
           lineCap: 'round'
         }
