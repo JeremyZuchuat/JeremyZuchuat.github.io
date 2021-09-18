@@ -1,0 +1,9 @@
+#map {
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+}
+
+.leaflet-marker-icon {
+    opacity: 0.90;
+}

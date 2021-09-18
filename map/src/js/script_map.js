@@ -3,7 +3,8 @@
 var mymap = new L.Map('map', {
   crs: L.CRS.EPSG3857,
   continuousWorld: true,
-  worldCopyJump: false
+  worldCopyJump: false,
+  fullscreenControl: true,
 });
 
 /* URL of Swisstopo tiles*/
