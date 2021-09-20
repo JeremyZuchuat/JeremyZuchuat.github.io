@@ -2549,19 +2549,6 @@ body.is-preload #banner_text_home p {
 
 }
 
-@media screen and (max-width: 900px) {
-
-	.image-cropper {
-	  width: 170px;
-	  height: 170px;
-	  position: relative;
-	  overflow: hidden;
-	  border-radius: 50%;
-		border: 2px solid var(--header_color);
-	}
-
-}
-
 
 @media screen and (max-width: 736px) {
 
@@ -2586,6 +2573,19 @@ body.is-preload #banner_text_home p {
   border-radius: 50%;
 	border: 2px solid var(--header_color);
 }
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.image-cropper {
+	  width: 100px;
+	  height: 100px;
+	  position: relative;
+	  overflow: hidden;
+	  border-radius: 50%;
+		border: 2px solid var(--header_color);
+	}
 
 }
 
