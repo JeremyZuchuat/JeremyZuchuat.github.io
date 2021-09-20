@@ -2574,7 +2574,8 @@ body.is-preload #banner_text_home p {
 }
 
 .cv {
-			margin-top: 0em;
+	margin-top: 0em;
+	padding-top: 0em;
 }
 
 }
@@ -2607,7 +2608,8 @@ body.is-preload #banner_text_home p {
 }
 
 .cv {
-	padding-top: 2em;
+	margin-top: 0em;
+	padding-top: 0em;
 	font-size: 0.9em;
 }
 
@@ -2626,11 +2628,12 @@ body.is-preload #banner_text_home p {
 
 	.box .row > .col-image-cv-text {
 			width: 70%;
-			padding-left: 2em;
+			padding-left: 4em;
 			padding-top: 2.5em;
 	}
 
 	.cv {
+		margin-top: -2em;
 		padding-top: 0em;
 		font-size: 0.9em;
 	}
