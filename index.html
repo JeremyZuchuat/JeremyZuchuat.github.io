@@ -12,12 +12,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/icone.png" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<section id="header" class="wrapper">
+				<section id="header">
 						<!-- Banner text -->
 						<div id="banner_text_home">
 							<!--<div class = "fade-in-1s">-->
@@ -47,25 +48,39 @@ On this website, you will find information about my professional and personal li
 						<!--<div class="title">Topics</div>-->
 						<div class="container">
 							<!-- List icons -->
+
+						<!-- CV -->
 							<div class="row aln-center">
-								<div class="col-3 col-9-medium">
+								<div class="col-4 col-2-medium col-1-small">
 									<section class="highlight">
 										<h3>
-											<a href="cv.html" class="fa fa-file"></a>
+											<a href="cv.html">
+												<span class="fa-stack fa-sm" style="padding-right:4em;">
+													<i class="fas fa-circle fa-stack-2x "></i>
+													<i class="fas fa-file fa-stack-1x "></i>
+												</span>
+											</a>
 											<a href="cv.html"> <span style="padding-left:0em">
 												Curriculum Vitae
 											</a>
 										</h3>
-										<p>Consult my online-CV and </br> download it as .pdf</p>
+										<p>Consult my online-CV and download it as .pdf</p>
 										<ul class="actions">
 											<li><a href="cv.html" class="button style1">See CV</a></li>
 										</ul>
 									</section>
 								</div>
-								<div class="col-3 col-9-medium">
+
+								<!-- PROJECTS -->
+								<div class="col-4 col-2-medium col-1-small">
 									<section class="highlight">
 										<h3>
-											<a href="projects.html" class="fa fa-tasks"></a>
+											<a href="projects.html">
+												<span class="fa-stack fa-sm" style="padding-right:4em;">
+													<i class="fas fa-circle fa-stack-2x "></i>
+													<i class="fas fa-tasks fa-stack-1x "></i>
+												</span>
+											</a>
 											<a href="projects.html"> <span style="padding-left:0em">
 												Projects
 											</a>
@@ -76,10 +91,17 @@ On this website, you will find information about my professional and personal li
 										</ul>
 									</section>
 								</div>
-								<div class="col-3 col-9-medium">
+
+								<!-- PHOTOGRAPHY -->
+								<div class="col-4 col-2-medium col-1-small">
 									<section class="highlight">
 											<h3>
-											<a href="photos_menu.html" class="fa fa-camera-retro"></a>
+											<a href="photos_menu.html">
+												<span class="fa-stack fa-sm" style="padding-right:4em;">
+												  <i class="fas fa-circle fa-stack-2x "></i>
+												  <i class="fas fa-camera-retro fa-stack-1x "></i>
+												</span>
+											</a>
 											<a href="photos_menu.html"> <span style="padding-left:0em">
 												Photography
 											</a>
@@ -90,10 +112,19 @@ On this website, you will find information about my professional and personal li
 										</ul>
 									</section>
 								</div>
-								<div class="col-3 col-9-medium">
+
+								<!-- SPORT -->
+								<div class="col-4 col-2-medium col-1-small">
 									<section class="highlight">
 										<h3>
-											<a href="ski_touring.html" class="fas fa-mountain"></a>
+											<a href="ski_touring.html">
+												<span class="fa-stack fa-sm" style="padding-right:4em;">
+													<i class="fas fa-circle fa-stack-2x"></i>
+													<i class="fas fa-mountain fa-stack-1x "></i>
+												</span>
+											</a>
+											<!--
+											<a href="ski_touring.html" class="fas fa-mountain"></a>-->
 											<a href="ski_touring.html"> <span style="padding-left:0em">
 												Ski Touring
 											</a>
@@ -109,18 +140,19 @@ On this website, you will find information about my professional and personal li
 					</section>
 
 
+
 					<!-- Footer -->
 						<section id="footer" class="wrapper">
 							<!--<div class="title">Contacts</div>-->
 							<!--<div class="container">-->
 
 										<!-- Contact -->
-										<section class="feature-list small">
+										<section class="feature-list contacts">
 
 												<div class="row">
 
 													<!-- Address -->
-													<div class="col-4 col-12-small">
+													<div class="col-3 col-2-medium col-1-small">
 														<section>
 															<h3 class="icon solid fa-map-marker-alt"> Address</h3>
 															<p>
@@ -133,20 +165,43 @@ On this website, you will find information about my professional and personal li
 													</div>
 
 													<!-- Social -->
-													<div class="col-4 col-12-small">
+													<div class="col-3 col-2-medium col-1-small">
 														<section>
 															<h3 class="icon solid fa-project-diagram">Social</h3>
 															<p>
-																<a href="https://www.linkedin.com/in/jeremy-zuchuat-4a34bb114/" class="fa fa-linkedin" target="_blank"></a>
-																<a href="https://www.instagram.com/jeremy_zuchuat/" class="fa fa-instagram" target="_blank"></a>
-																<a href="https://www.facebook.com/jeremy.zuchuat/" class="fa fa-facebook" target="_blank"></a>
-																<a href="https://www.strava.com/athletes/46899503" class="fab fa-strava" target="_blank"></a>
-															</p>
+																<!-- LINKEDIN -->
+																<a id="linkedin_icon" href="https://www.linkedin.com/in/jeremy-zuchuat-4a34bb114/" target="_blank" style="text-decoration: none;">
+																	<span class="fa-stack fa-sm" style="padding-right:3em;">
+																		<i class="fa fa-circle fa-stack-2x"></i>
+																		<i class="fa fa-linkedin fa-stack-1x"></i>
+																	</span>
+																</a>
+																<!-- INSTAGRAM -->
+																<a id="instagram_icon" href="https://www.instagram.com/jeremy_zuchuat/" target="_blank" style="text-decoration: none;">
+																	<span class="fa-stack fa-sm" style="padding-right:3em;">
+																		<i class="fa fa-circle fa-stack-2x "></i>
+																		<i class="fa fa-instagram fa-stack-1x"></i>
+																	</span>
+																</a>
+																<!-- FACEBOOK -->
+																<a id="facebook_icon"href="https://www.facebook.com/jeremy.zuchuat/" target="_blank" style="text-decoration: none;">
+																	<span class="fa-stack fa-sm" style="padding-right:3em;">
+																		<i class="fa fa-circle fa-stack-2x "></i>
+																		<i class="fab fa-facebook fa-stack-1x "></i>
+																	</span>
+																</a>
+																<!-- STRAVA -->
+																<a id="strava_icon" href="https://www.strava.com/athletes/46899503" target="_blank" style="text-decoration: none;">
+																	<span class="fa-stack fa-sm" style="padding-right:3em;">
+																		<i class="fa fa-circle fa-stack-2x "></i>
+																		<i class="fab fa-strava fa-stack-1x "></i>
+																	</span>
+																</a>
 														</section>
 													</div>
 
 													<!-- Mail -->
-													<div class="col-4 col-12-small">
+													<div class="col-3 col-2-medium col-1-small">
 														<section>
 															<h3 class="icon solid fa-envelope">Email</h3>
 															<p>
