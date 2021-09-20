@@ -2566,12 +2566,16 @@ body.is-preload #banner_text_home p {
 }
 
 .image-cropper {
-  width: 140px;
-  height: 140px;
+  width: 30px;
+  height: 3px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
 	border: 2px solid var(--header_color);
+}
+
+.box .row > .col-image-cv-text {
+		width: 70%;
 }
 
 }
@@ -2579,12 +2583,16 @@ body.is-preload #banner_text_home p {
 @media screen and (max-width: 600px) {
 
 	.image-cropper {
-	  width: 100px;
-	  height: 100px;
+	  width: 20px;
+	  height: 20px;
 	  position: relative;
 	  overflow: hidden;
 	  border-radius: 50%;
 		border: 2px solid var(--header_color);
+	}
+
+	.box .row > .col-image-cv-text {
+			width: 70%;
 	}
 
 }
