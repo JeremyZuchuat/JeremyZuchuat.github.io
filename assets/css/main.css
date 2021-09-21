@@ -2503,12 +2503,11 @@ body.is-preload #banner_text_home p {
 ** CV : image
 ****/
 
-
-#sidebar img {
-  display: inline;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
+#cv_sidebar img {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
 }
 
 .image-cropper {
@@ -2518,6 +2517,39 @@ body.is-preload #banner_text_home p {
   overflow: hidden;
   border-radius: 50%;
 	border: 2px solid var(--header_color);
+}
+
+#cv_sidebar {
+	/* TRANSITION */
+	-moz-transition: opacity var(--tr_banner_time) ease, -moz-transform var(--tr_banner_time) ease, -moz-filter 0.25s ease;
+	-webkit-transition: opacity var(--tr_banner_time) ease, -webkit-transform var(--tr_banner_time) ease, -webkit-filter 0.25s ease;
+	-ms-transition: opacity var(--tr_banner_time) ease, -ms-transform var(--tr_banner_time) ease, -ms-filter 0.25s ease;
+	transition: opacity var(--tr_banner_time) ease, transform var(--tr_banner_time) ease, filter 0.25s ease;
+	-moz-transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	-moz-transition-delay: var(--tr_banner_delay_h1);
+	-webkit-transition-delay: var(--tr_banner_delay_h1);
+	-ms-transition-delay: var(--tr_banner_delay_h1);
+	transition-delay: var(--tr_banner_delay_h1);
+	-moz-filter: blur(0);
+	-webkit-filter: blur(0);
+	-ms-filter: blur(0);
+	filter: blur(0);
+	opacity: 1;
+}
+
+.is-preload #cv_sidebar {
+	opacity: 0;
+	-moz-transform: translateX(0em);
+	-webkit-transform: translateX(0em);
+	-ms-transform: translateX(0em);
+	transform: translateX(0em);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
 }
 
 /****
