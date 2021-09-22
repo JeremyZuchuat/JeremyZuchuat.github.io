@@ -2461,6 +2461,7 @@ body.is-preload #banner_text_home p {
 */
 .row > .col-left-cv {
 	width: 25%;
+	margin-left:0%;
 }
 
 .row > .col-right-cv {
@@ -2557,17 +2558,22 @@ body.is-preload #banner_text_home p {
 ****/
 
 
-@media screen and (max-width: 1680px) {
-/*
-.row.gtr-150 {
-		margin-top: -75px;
-		margin-left: -75px;
+@media screen and (min-width: 1681px) {
+
+	.row > .col-left-cv {
+		width: 20%;
+		margin-left:5%;
+	}
+
 }
 
-.row.gtr-150 > * {
-	padding: 75px 0 0 75px;
-}
-*/
+@media screen and (max-width: 1680px) {
+
+	.row > .col-left-cv {
+		width: 25%;
+		margin-left:0%;
+	}
+
 }
 
 
