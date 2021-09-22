@@ -248,8 +248,8 @@ input, select, textarea {
 .container {
 margin-left: auto;
 margin-right: auto;
-max-width: 100%;
-width: 100%;
+max-width: 90%;
+width: 90%;
 }
 
 @media screen and (max-width: 1680px) {
@@ -2561,8 +2561,8 @@ body.is-preload #banner_text_home p {
 @media screen and (min-width: 1681px) {
 
 	.row > .col-left-cv {
-		width: 20%;
-		margin-left:5%;
+		width: 25%;
+		margin-left:0%;
 	}
 
 }
@@ -2676,6 +2676,34 @@ body.is-preload #banner_text_home p {
 		font-size: 0.9em;
 	}
 
+}
+
+/***************************************************************************************************************************************
+**************************s*************************************************************************************************************/
+
+
+/****
+** SCROLLING
+****/
+
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: none;
+}
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: block;
 }
 
 
