@@ -47,15 +47,15 @@
 
 @media (max-width: 736px) {
   #photo_menu .container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: 600px) {
   #photo_menu .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -772,22 +772,26 @@ a.active {
 
 @media (max-width: 736px) {
   .image-photo-menu {
-    height: 275px;
+    height: 300px;
   }
 
   .image-photo-menu img {
-    height: 275px;
+    height: 300px;
   }
 }
 
 @media (max-width: 600px) {
   .image-photo-menu {
-    height: 230px;
+    height: 250px;
   }
 
   .image-photo-menu img {
-    height: 230px;
+    height: 250px;
   }
+}
+
+#photo_menu header {
+  margin-top: -50px;
 }
 
 /****
@@ -796,23 +800,23 @@ a.active {
 
 #photo_menu .container p {
   display: block;
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 #photo_menu .container p  {
   /* TRANSITION */
-  -moz-transition: opacity var(--tr_banner_time) ease, -moz-transform var(--tr_banner_time) ease, -moz-filter 0.25s ease;
-  -webkit-transition: opacity var(--tr_banner_time) ease, -webkit-transform var(--tr_banner_time) ease, -webkit-filter 0.25s ease;
-  -ms-transition: opacity var(--tr_banner_time) ease, -ms-transform var(--tr_banner_time) ease, -ms-filter 0.25s ease;
-  transition: opacity var(--tr_banner_time) ease, transform var(--tr_banner_time) ease, filter 0.25s ease;
+  -moz-transition: opacity 1s ease, -moz-transform 1 ease, -moz-filter 0.25s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1 ease, -webkit-filter 0.25s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1 ease, -ms-filter 0.25s ease;
+  transition: opacity 2.5s ease, transform 1s ease, filter 1s ease;
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-  -moz-transition-delay: var(--tr_banner_delay_h1);
-  -webkit-transition-delay: var(--tr_banner_delay_h1);
-  -ms-transition-delay: var(--tr_banner_delay_h1);
-  transition-delay: var(--tr_banner_delay_h1);
+  -moz-transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  transition-delay: 0.6s;
   -moz-filter: blur(0);
   -webkit-filter: blur(0);
   -ms-filter: blur(0);
@@ -822,10 +826,10 @@ a.active {
 
 .is-preload #photo_menu .container p {
 	opacity: 0;
-	-moz-transform: translateY(-2em);
-	-webkit-transform: translateY(-2em);
-	-ms-transform: translateY(-2em);
-	transform: translateY(-2em);
+	-moz-transform: translateY(0em);
+	-webkit-transform: translateY(0em);
+	-ms-transform: translateY(0em);
+	transform: translateY(0em);
 	-moz-filter: blur(2px);
 	-webkit-filter: blur(2px);
 	-ms-filter: blur(2px);
