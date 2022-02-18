@@ -1,9 +1,79 @@
-#map {
+#map_container {
+  background-color: lightgray;
   margin: auto;
-  margin-top: 0px;
-  height: 750px;
+  position: relative;
+  width: 450px;
+  height: 480px;
+  top:-50px;
 }
 
+#map {
+  position: absolute;
+  top: 50%;
+  right :50%;
+  transform: translateY(-50%) translateX(+50%);
+  width: 430px;
+  height: 460px;
+}
+
+@media screen and (min-width: 600px) {
+  #map_container {
+    width: 500px;
+    height: 480px;
+  }
+  #map {
+    width: 480px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #map_container {
+    width: 700px;
+    height: 500px;
+  }
+  #map {
+    width: 680px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #map_container {
+    width:800px;
+    height: 480px;
+  }
+  #map {
+    width: 780px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #map_container {
+    width: 1000px;
+    height: 600px;
+  }
+  #map {
+    width:980px;
+    height: 580px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #map_container {
+    width:1200px;
+    height: 720px;
+  }
+  #map {
+    width:1180px;
+    height: 700px;
+  }
+}
+
+
+
+/*
 @media screen and (min-width: 400px) {
   #map {
     width: 350px;
@@ -61,7 +131,7 @@
     height: 750px;
   }
 }
-
+*/
 .leaflet-marker-icon {
     opacity: 0.90;
 }
