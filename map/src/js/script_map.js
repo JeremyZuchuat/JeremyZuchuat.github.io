@@ -24,25 +24,25 @@ mymap.addLayer(tilelayer);
 // Define Markers Styles
 
 var mountain_logo_red = L.icon({
-    iconUrl: './icons/mountain_logo_red.png',
+    iconUrl: 'map/icons/mountain_logo_red.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_red_H = L.icon({
-    iconUrl: './icons/mountain_logo_red_light.png',
+    iconUrl: 'map/icons/mountain_logo_red_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_blue = L.icon({
-    iconUrl: './icons/mountain_logo_blue.png',
+    iconUrl: 'map/icons/mountain_logo_blue.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_blue_H = L.icon({
-    iconUrl: './icons/mountain_logo_blue_light.png',
+    iconUrl: 'map/icons/mountain_logo_blue_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
