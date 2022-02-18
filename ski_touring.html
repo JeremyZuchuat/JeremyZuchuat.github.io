@@ -2,6 +2,14 @@
 
 <html>
 
+<!-- LEAFLET -->
+<!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css'>-->
+<link rel="stylesheet" href="map/src/css/leaflet.css">
+<!-- LEAFLET - Full screen -->
+<link rel="stylesheet" href="map/src/css/Leaflet.fullscreen.css">
+<!-- MAP -->
+<link rel="stylesheet" href="map/src/css/style_map.css">
+
 <!-- ONGLET -->
 	<head>
 		<title>JZ - Ski Touring</title>
@@ -46,11 +54,37 @@
 <!-- MAIN -->
 <section id="main" class="wrapper style1">
 		<div class="container">
-			<div class="row gtr-150">
 
-		  	<h2> Under Construction </h2>
+				<header class="style1">
+						<p align ="justify">Ski touring has been one my dearest passion for 2-3 years.
+							Underneath, you'll find a map with detailed reviews (in French) of most of the tours I have had the opportunity to undertake with my dear teammates, during the winter seasons 2020-2022.
+							Most of the tours are located in Valais, but sometimes we dare exploring other neighbouring regions...
+							Feel free to explore them!
+						</p>
+					</header>
 
-				</div>
+				<!-- MAP -->
+				<div id="map"></div>
+
+				<!-- jQuery -->
+				<script src= 'map/src/js/jquery.min.js'></script>
+
+				<!-- jQuery csv -->
+				<script src="map/src/js/jquery-csv.js"></script>
+
+				<!-- papa parse -->
+				<script src="map/src/js/papaparse.js"></script>
+
+				<!-- LEAFLET -->
+				<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js'></script>-->
+				<script src="map/src/js/leaflet.js"></script>
+				<script src="map/src/js/gpx.min.js"></script>
+				<script src="map/src/js/Leaflet.fullscreen.min.js"></script>
+
+				<!-- OWN SCRIPT MAP -->
+				<script  src="map/src/js/script_map.js"></script>
+
+
 			</div>
 </section>
 <!-- MAIN END -->
