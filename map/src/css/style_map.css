@@ -1,24 +1,27 @@
 #map {
   margin: auto;
   margin-top: 0px;
-  height: 600px;
+  height: 750px;
 }
 
 @media screen and (min-width: 400px) {
   #map {
     width: 350px;
+    height: 500px;
   }
 }
 
 @media screen and (min-width: 500px) {
   #map {
     width: 450px;
+    height: 500px;
   }
 }
 
 @media screen and (min-width: 600px) {
   #map {
     width: 500px;
+    height: 600px;
   }
 }
 
