@@ -1,8 +1,62 @@
 #map {
   margin: auto;
-  margin-top: 20px;
-  width: 1000px;
+  margin-top: 0px;
   height: 600px;
+}
+
+@media screen and (min-width: 400px) {
+  #map {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #map {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #map {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #map {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #map {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #map {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #map {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #map {
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #map {
+    width: 1200px;
+    height: 750px;
+  }
 }
 
 .leaflet-marker-icon {
