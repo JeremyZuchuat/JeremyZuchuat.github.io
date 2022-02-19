@@ -16,13 +16,35 @@
   height: 460px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
   #map_container {
-    width: 500px;
+    width: 380px;
     height: 480px;
   }
   #map {
-    width: 480px;
+    width: 360px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #map_container {
+    width: 470px;
+    height: 480px;
+  }
+  #map {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #map_container {
+    width: 550px;
+    height: 480px;
+  }
+  #map {
+    width: 530px;
     height: 460px;
   }
 }
