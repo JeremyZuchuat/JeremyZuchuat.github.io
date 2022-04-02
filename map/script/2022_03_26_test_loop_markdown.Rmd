@@ -1,0 +1,14 @@
+---
+output: 
+    html_document:
+      includes:
+        before_body: "2022_03_26_before_body.html"
+      theme: null
+      highlight: null
+      mathjax: null
+---
+
+```{r, echo=FALSE,message=FALSE,results="asis"}
+  cat('<div id="photo_gallery">')
+  cat("<h1>",info_touring$Course[k]," (", as.character(info_touring$Elevation_max[k]), "m) ", "</h1>",  sep = "") 
+```

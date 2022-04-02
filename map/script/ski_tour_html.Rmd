@@ -1,0 +1,69 @@
+---
+output: html_document
+params:
+  variable1: "ttour"
+---
+
+```{r setup, include=FALSE}
+
+  ####
+  ## SETUP R
+  ####
+
+  # Packages 
+  library(readxl)
+  library(rmarkdown)
+  library(raster)
+  library(rasterVis)
+  library(rgdal)
+  library(ggplot2)
+  library(rasterpdf)
+  library(grImport)
+  library(plotKML)
+  library(geosphere)
+
+  knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r info_touring, include=FALSE}
+
+  # Working directory
+  path_root <- "/Users/j.zuchuat/Documents/GitHub/JeremyZuchuat.github.io/map" 
+  path_HTML <- "../ski_touring_html"
+  path_GPX <- paste(path_root,"/gpx/simplified/",sep="") 
+  
+  # Main path
+  setwd(path_root)
+
+  # Info on tours
+  info_touring <- read.csv("information/info_touring.csv",sep=",")
+
+  # List GPX files
+  list_GPX <- list.files(path = path_GPX)
+  list_GPX <- list_GPX[substr(list_GPX,nchar(list_GPX)-3,nchar(list_GPX)) == ".gpx"]
+  list_GPX <- substr(list_GPX,1,nchar(list_GPX)-4)
+  
+  # Palette raster
+  pal <- colorRampPalette(c(rgb(0.1,0.1,0.1),rgb(1,1,1)))
+  
+  # Printing only two decimals
+  print_decimal <- function(x, d=2) sprintf(paste0("%1.",d,"f"), x) 
+  
+  # Function status 
+  print_status <- function(x) {
+    message(x)
+}
+```
+
+
+```{r index_tour, include=FALSE}
+  i <- match("2020_01_26_grand_chateau",list_GPX)
+  #i <- match(paste(params$variable1),list_GPX)
+```
+
+Test print:
+
+```{r, echo=FALSE,message=FALSE,results="asis"}
+  cat(" \\Huge ",info_touring$Course[1]," \\LARGE (", as.character(info_touring$Elevation_max[1]), "m) ",  sep = "") 
+```

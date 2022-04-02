@@ -1,0 +1,129 @@
+---
+title: "\\vspace{30pt} \\Huge Carnet de Sorties"
+author: "\\Large Jeremy Zuchuat"
+header-includes:
+  - \usepackage[utf8]{inputenc}	
+  - \usepackage{geometry}
+  - \usepackage[default]{raleway}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{lmodern}
+  - \usepackage{moresize}
+  - \usepackage{fontawesome}
+  - \usepackage{paracol}
+  - \usepackage{fancyhdr}
+  - \usepackage{graphicx}
+  - \usepackage{color}
+  - \usepackage{transparent}
+  - \usepackage{tikz}	
+  - \usetikzlibrary{shapes, backgrounds,mindmap, trees}
+  - \usepackage{enumitem}
+  - \usepackage{hyperref}
+  - \usepackage{mdframed}
+  - \usepackage{datetime}
+  - \usepackage{lscape}
+  - \geometry{margin=2.25cm}
+  - \pagestyle{empty}
+  - \setlength{\parindent}{0mm}
+  - \definecolor{maincol}{RGB}{ 80, 110, 150 } # \definecolor{maincol}{RGB}{ 225, 0, 0 }
+  - \definecolor{darkcol}{RGB}{ 70, 70, 70 }
+  - \definecolor{lightcol}{RGB}{245,245,245}
+  - \setitemize{label={\color{maincol}\faCheck}}
+  - \include{Latex/graphical_element}
+  - \usetikzlibrary{calc}
+  - \usetikzlibrary{decorations.pathmorphing}
+  - \newdateformat{monthyeardate}{%
+  - \monthname[\THEMONTH], \THEYEAR}
+output: 
+  pdf_document:
+    keep_tex: true
+---
+
+\columnratio{0.4}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\colseprulecolor{lightcol}
+\linespread{1.20}
+
+```{r setup, include=FALSE}
+  rm(list=ls())
+
+  # Packages 
+  library(readxl)
+  library(rmarkdown)
+  library(raster)
+  library(rasterVis)
+  library(rgdal)
+  library(ggplot2)
+  library(rasterpdf)
+  library(grImport)
+  library(plotKML)
+  library(geosphere)
+
+  knitr::opts_chunk$set(echo = TRUE)
+```
+
+\thispagestyle{empty}
+
+\begin{tikzpicture}[overlay,remember picture]
+	\draw [line width=0.3mm,decorate]
+	($ (current page.north west) + (2.35cm,-2.35cm) $)
+	rectangle
+	($ (current page.south east) + (-2.35cm,2.35cm) $);
+	\draw [line width=0.5mm,decorate]
+	($ (current page.north west) + (2.5cm,-2.5cm) $)
+	rectangle
+	($ (current page.south east) + (-2.5cm,2.5cm) $);
+\end{tikzpicture}
+
+\begin{figure}
+  \vspace{-20pt}
+	\begin{center}
+	\includegraphics[width=11cm]{Pictures/Cover.jpg}
+	\end{center}
+	\vspace{20pt}
+\end{figure}
+
+\begin{center} 
+  \Large \monthyeardate\today
+\end{center} 
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\cfoot{- \thepage -}
+
+```{r info_touring, include=FALSE}
+
+  # Working directory
+  path_root <- "/Users/j.zuchuat/Documents/GitHub/JeremyZuchuat.github.io/map" 
+  path_HTML <- "../ski_touring_html"
+  path_GPX <- paste(path_root,"/gpx/simplified/",sep="") 
+  
+  # Main path
+  setwd(path_root)
+
+  # Info on tours
+  info_touring <- read.csv("information/info_touring.csv",sep=",")
+
+  # List GPX files
+  list_GPX <- list.files(path = path_GPX)
+  list_GPX <- list_GPX[substr(list_GPX,nchar(list_GPX)-3,nchar(list_GPX)) == ".gpx"]
+  list_GPX <- substr(list_GPX,1,nchar(list_GPX)-4)
+  
+  # Palette raster
+  pal <- colorRampPalette(c(rgb(0.1,0.1,0.1),rgb(1,1,1)))
+  
+  # Printing only two decimals
+  print_decimal <- function(x, d=2) sprintf(paste0("%1.",d,"f"), x) 
+  
+  # Function status 
+  print_status <- function(x) {
+    message(x)
+}
+```
+
+Hello
