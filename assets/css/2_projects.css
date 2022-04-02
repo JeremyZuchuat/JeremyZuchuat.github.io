@@ -1,0 +1,22 @@
+/****
+** HEADER
+*****/
+
+#header {
+	background: url("../../images/banner_2.jpg") center;
+	background-size: cover;
+	padding: 0;
+}
+
+@media screen and (max-width: 736px) {
+
+	#header {
+		height: 22em;
+		background: url("../../images/banner_2_small.jpg") center;
+	}
+
+}
+
+/****
+*** END ADJUSTMENT SCREEN
+*****/

@@ -1143,8 +1143,8 @@ button.style1:active,
 	justify-content: center;
 	position: relative;
 
-	height: 30em;
-	background: url("../../images/banner.jpg") center;
+	height: 32em;
+	background: url("../../images/banner_0.jpg") center;
 	background-size: cover;
 	padding: 0;
 }
@@ -1159,7 +1159,7 @@ button.style1:active,
 }
 
 .homepage #header {
-	height: 35em;
+	height: 37em;
 }
 
 /***************************************************************************************************************************************
@@ -2098,7 +2098,7 @@ body.is-preload #banner_text_home p {
 
 	#header {
 		height: 22em;
-		background: url("../../images/banner_small_screen.jpg") center;
+		background: url("../../images/banner_0_small.jpg") center;
 	}
 
 	.homepage #header {
