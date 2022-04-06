@@ -1070,18 +1070,33 @@ button.style1:active,
 			color: rgba(255, 255, 255, 0.75);
 		}
 
-			.wrapper.style1 .title {
+			.wrapper .style1 .title {
 				background: var(--wrap-color-1) ;
 				color: #fff;
+			}
+
+			.wrapper .container .project h1 {
+				font-size: 1.1em;
+				color: #484d55;
+			}
+
+			.wrapper .container .project h2 {
+				color: #484d55;
+				font-size: 1.0em;
+				font-weight: lighter;
+			}
+
+			.wrapper .container .project p {
+				margin-top: 0.5em;
+				color: #acb1b9;
+				font-size: 0.9em;
+				text-align: justify;
 			}
 
 			.wrapper.style1 h3 {
 				color: var(--button_color_1b);
 			}
 
-			.wrapper.style1 h1 {
-				color: pink;
-			}
 /*
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
 				color: #fff;
