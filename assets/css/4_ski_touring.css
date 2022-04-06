@@ -12,7 +12,8 @@
 
 	#header {
 		height: 22em;
-		background: url("../../images/banner_4_small.jpg") center;
+		background: url("../../images/banner_4.jpg") center;
+		background-size: 1000px;
 	}
 
 }
