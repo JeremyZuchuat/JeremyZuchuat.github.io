@@ -824,7 +824,7 @@ a.active {
   margin: 15px 0;
 }
 
-#photo_menu .container p  {
+#photo_menu .gallery p  {
   /* TRANSITION */
   -moz-transition: opacity 1s ease, -moz-transform 1 ease, -moz-filter 0.25s ease;
   -webkit-transition: opacity 1s ease, -webkit-transform 1 ease, -webkit-filter 0.25s ease;
@@ -845,7 +845,7 @@ a.active {
   opacity: 1;
 }
 
-.is-preload #photo_menu .container p {
+.is-preload #photo_menu .gallery p {
 	opacity: 0;
 	-moz-transform: translateY(0em);
 	-webkit-transform: translateY(0em);
