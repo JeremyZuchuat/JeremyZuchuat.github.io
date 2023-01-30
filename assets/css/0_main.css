@@ -2508,6 +2508,7 @@ body.is-preload #banner_text_home p {
 .cv table {
     border-collapse: collapse;
 		color:  #b3b3b3; #c1c1c1;
+		margin-bottom: 3em;
 }
 
 .cv td.first-row {
