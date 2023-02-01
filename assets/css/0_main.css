@@ -40,7 +40,7 @@
 	--color-navigation-bar : rgba(40, 45, 50, 0.4);
 
 	/* Header color */
-	--header_color : rgba(40, 45, 50, 0.4);
+	--header_color : rgba(40, 45, 50, 0.5);
 	/* Color Buttons */
 	--button_color_1a : rgba(105, 130, 160, 1); /* rgba(145, 170, 200, 1); */
 	--button_color_1b : rgba(145, 175, 210, 1); /* rgba(185, 210, 240, 1); */
@@ -1316,7 +1316,7 @@ body.is-preload #banner_text p {
 /* H1 */
 #banner_text_home h1 {
 		text-align: center;
-		font-weight: 900;
+		font-weight: 1000;
 		font-variant: small-caps;
 		color: #fff;
 		font-size: 2em;
@@ -1364,6 +1364,7 @@ body.is-preload #banner_text_home h1 {
 		/*text-transform: uppercase;*/
 		margin: 1.25em 0 0 0;
 		display: block;
+		font-weight: 500;
 		letter-spacing: 0.2em;
 		font-size: 1.1em;
 		padding: 0em 2em 0em 2em;
