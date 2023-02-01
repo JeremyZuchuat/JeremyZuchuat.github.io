@@ -1093,6 +1093,20 @@ button.style1:active,
 				text-align: justify;
 			}
 
+			.wrapper .container .intro h2 {
+				color: #484d55;
+				font-size: 1.0em;
+				font-weight: lighter;
+				text-align: justify;
+			}
+
+			.wrapper .container .intro a {
+			  color: black;
+			  background-color: transparent;
+			  text-decoration: none;
+				font-weight: bold;
+			}
+
 			.wrapper.style1 h3 {
 				color: var(--button_color_1b);
 			}
