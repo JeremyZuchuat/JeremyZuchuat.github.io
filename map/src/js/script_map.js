@@ -17,7 +17,7 @@ var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/defau
 var tilelayer = new L.tileLayer(url);
 mymap.addLayer(tilelayer);
 
-console.log("Hello 3:");
+console.log("Hello 4:");
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ async function getData(path) {
 
       // Click
       marker.on('click', function(e) {
-        window.location = 'https://jeremyzuchuat.github.io';
+        window.location = table[i].Strava;
       })
 
       // Marker mouseover : Highlight
