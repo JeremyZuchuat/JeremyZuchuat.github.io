@@ -7,6 +7,9 @@ var mymap = new L.Map('map', {
   fullscreenControl: true,
 });
 
+/* Path */
+var path = 'map/information/info_touring.csv'
+
 /* URL of Swisstopo tiles*/
 var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg';
 
@@ -70,7 +73,7 @@ async function getData(path) {
   // MARKERS
 
       // Get marker's geolocalisation
-            var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+      var marker = L.marker([table[i].Latitude, table[i].Longitude], {
         icon: mountain_logo_blue
       }).addTo(mymap);
 
