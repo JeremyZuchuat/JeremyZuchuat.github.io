@@ -1,10 +1,46 @@
+/*
+  OLD
+
+  #map_container {
+    background-color: rgba(90, 110, 125, 1);
+    margin: auto;
+    position: relative;
+    width: 450px;
+    height: 480px;
+    top:-0px;
+  }
+
+  #map {
+    position: absolute;
+    top: 50%;
+    right :50%;
+    transform: translateY(-50%) translateX(+50%);
+    width: 430px;
+    height: 460px;
+  }
+*/
+
+#map_wrapper {
+    width: 500px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#map_text {
+    padding-left: 40px;
+    overflow: hidden;
+    color: var(--bg-color-1);
+    text-align: justify;
+}
+
 #map_container {
-  background-color: rgba(90, 110, 125, 1);
-  margin: auto;
+  background-color: var(--bg-color-1); /*rgba(120, 130, 145, 1);*/
   position: relative;
   width: 450px;
   height: 480px;
+  float:left; /* add this */
   top:-0px;
+  margin-bottom: 60px;
 }
 
 #map {
@@ -84,76 +120,15 @@
 
 @media screen and (min-width: 1400px) {
   #map_container {
-    width:1200px;
-    height: 720px;
+    width:650px;
+    height: 450px;
   }
   #map {
-    width:1180px;
-    height: 700px;
+    width:630px;
+    height: 430px;
   }
 }
 
-
-
-/*
-@media screen and (min-width: 400px) {
-  #map {
-    width: 350px;
-    height: 500px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  #map {
-    width: 450px;
-    height: 500px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #map {
-    width: 500px;
-    height: 600px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  #map {
-    width: 600px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  #map {
-    width: 700px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  #map {
-    width: 800px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  #map {
-    width: 900px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #map {
-    width: 1000px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  #map {
-    width: 1200px;
-    height: 750px;
-  }
-}
-*/
 .leaflet-marker-icon {
     opacity: 0.90;
 }
