@@ -83,8 +83,10 @@ async function getData(path) {
       marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
 
       // Click
+      var linkout = table[i].Strava
+      console.log(linkout);
       marker.on('click', function(e) {
-        window.location = table[i].Strava;
+        window.location = linkout;
       })
 
       // Marker mouseover : Highlight
