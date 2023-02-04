@@ -17,7 +17,7 @@ var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/defau
 var tilelayer = new L.tileLayer(url);
 mymap.addLayer(tilelayer);
 
-console.log("Hello 10:");
+console.log("Hello 1:");
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
@@ -84,10 +84,9 @@ async function getData(path) {
       marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
 
       // Click
-      var linkout = table[i].Strava
-      console.log(linkout);
+      console.log(table[i].Strava);
       marker.on('click', function(e) {
-        window.open(linkout);
+        window.open(table[i].Strava);
       })
 
       // Marker mouseover : Highlight
