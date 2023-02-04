@@ -8,7 +8,7 @@ var mymap = new L.Map('map', {
 });
 
 /* Path */
-var path = 'map/information/info_touring.csv'
+// var path = 'map/information/info_touring.csv'
 
 /* URL of Swisstopo tiles*/
 var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg';
@@ -105,6 +105,7 @@ async function getData(path) {
 
 }
 
+getData('map/information/info_touring.csv')
 
 // MANUALLY ADD MARKERS
 
