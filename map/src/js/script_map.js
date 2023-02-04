@@ -17,7 +17,7 @@ var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/defau
 var tilelayer = new L.tileLayer(url);
 mymap.addLayer(tilelayer);
 
-console.log("Hello 7:");
+console.log("Hello 8:");
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
@@ -76,8 +76,8 @@ async function getData(path) {
 
       // Get marker's geolocalisation
       var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-        icon: mountain_logo_blue,
-        win_url: "https://www.google.fr/",
+        icon: mountain_logo_blue
+        /*win_url: "https://www.google.fr/",*/
       }).addTo(mymap);
 
       // Popup
@@ -87,7 +87,7 @@ async function getData(path) {
       var linkout = table[i].Strava
       console.log(linkout);
       marker.on('click', function(e) {
-        window.location = linkout;
+        window.open = "https://www.google.fr/";
       })
 
       // Marker mouseover : Highlight
