@@ -76,19 +76,27 @@ async function getData(path) {
 
       // Get marker's geolocalisation
       var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-        icon: mountain_logo_blue
-        /*win_url: "https://www.google.fr/",*/
+        icon: mountain_logo_blue,
+        win_url: table[i].Strava
       }).addTo(mymap);
 
       // Popup
       marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
 
       // Click
+      function onClick(e) {
+          console.log(this.options.win_url);
+          window.open(this.options.win_url);
+      }
+
+      marker.on('click', onClick);
+
+/*
       console.log(table[i].Strava);
       marker.on('click', function(e) {
         window.open(table[i].Strava);
       })
-
+*/
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
         this.openPopup();
