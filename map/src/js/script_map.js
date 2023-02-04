@@ -104,7 +104,7 @@ async function getData(path) {
       });
 
       // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
-
+/*
       var path_gpx = "map/GPX/Simplified/" + table[i].File + ".gpx";
       console.log(path_gpx);
 
@@ -116,11 +116,11 @@ async function getData(path) {
       // GPX
       console.log("GPX LEAFLET");
       // var gpx = ''; // URL to your GPX file or the GPX itself
-      /*
+
       new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
         mymap.fitBounds(e.target.getBounds());
       }).addTo(mymap);
-      */
+
       new L.GPX(data_gpx, {
         async: true,
         marker_options: {
@@ -137,7 +137,7 @@ async function getData(path) {
           lineCap: 'round'
         }
       }).addTo(mymap);
-
+*/
 
     }
 
