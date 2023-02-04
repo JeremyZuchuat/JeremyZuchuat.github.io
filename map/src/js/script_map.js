@@ -17,7 +17,7 @@ var url = 'https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/defau
 var tilelayer = new L.tileLayer(url);
 mymap.addLayer(tilelayer);
 
-console.log("Hello 6:");
+console.log("Hello 7:");
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
@@ -76,7 +76,8 @@ async function getData(path) {
 
       // Get marker's geolocalisation
       var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-        icon: mountain_logo_blue
+        icon: mountain_logo_blue,
+        win_url: "https://www.google.fr/",
       }).addTo(mymap);
 
       // Popup

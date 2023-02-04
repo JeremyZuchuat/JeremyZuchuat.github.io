@@ -70,7 +70,8 @@ async function getData(path) {
   // MARKERS
 
       // Get marker's geolocalisation
-            var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+      var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+        win_url: "http://127.0.0.1:8000/mapcamion",
         icon: mountain_logo_blue
       }).addTo(mymap);
 
