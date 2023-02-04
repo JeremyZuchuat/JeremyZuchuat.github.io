@@ -76,6 +76,13 @@ async function getData(path) {
 
       // Popup
       marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
+/*
+      // Click
+      marker.on('click', function(e) {
+        e.target.setIcon(mountain_logo_red_H);
+        marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
+      });
+*/
 
       // Click
       marker.on('click', function(e) {
@@ -96,13 +103,101 @@ async function getData(path) {
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
 
+      // CREAE A R FIILE THAT GENERATES A JAVASCRIPT WITH ARRAY GPX
+/*
+      var path_gpx = "map/GPX/Simplified/" + table[i].File + ".gpx";
+      console.log(path_gpx);
+
+      // IMPORT GPX
+      console.log("IMPORT GPX:");
+      const response_gpx = await fetch(path_gpx);
+      const data_gpx = await response_gpx.text();
+      console.log(data_gpx);
+      // GPX
+      console.log("GPX LEAFLET");
+      // var gpx = ''; // URL to your GPX file or the GPX itself
+
+      new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
+        mymap.fitBounds(e.target.getBounds());
+      }).addTo(mymap);
+
+      new L.GPX(data_gpx, {
+        async: true,
+        marker_options: {
+          startIconUrl: false,
+          endIconUrl: false,
+          shadowUrl: false
+        },
+        polyline_options: {
+          // color: 'green',
+          color: 'rgb(60, 140, 220)',
+          // color: 'rgb(230, 70, 70)',
+          opacity: 0.90,
+          weight: 3,
+          lineCap: 'round'
+        }
+      }).addTo(mymap);
+*/
+
     }
 
 }
 
+/*getData('map/info_touring.csv');*/
 
-// MANUALLY ADD MARKERS
+/*
+async function getGPX(path) {
 
+    // IMPORT GPX
+  console.log("IMPORT GPX:");
+  const response = await fetch(path);
+  const data_gpx = await response.text();
+  console.log(data_gpx);
+
+  // GPX
+  console.log("GPX LEAFLET");
+  // var gpx = ''; // URL to your GPX file or the GPX itself
+  new L.GPX(data_gpx, {async: true}).on('loaded', function(e) {
+    mymap.fitBounds(e.target.getBounds());
+  }).addTo(mymap);
+}
+
+getGPX('GPX/2020_01_24_la_fava.gpx');
+*/
+
+
+/*
+gpx_parsed = gpx.parse("<xml><gpx></gpx></xml>");
+console.log(gpx_parsed);
+*/
+/*
+async function getGPX(path) {
+
+    // IMPORT GPX
+  console.log("IMPORT GPX:");
+  const response = await fetch(path);
+  const data_gpx = await response.text();
+  console.log(data_gpx);
+
+  // gpx.parse(data_gpx);
+  console.log("GPX parsed");
+  console.log(gpx_parsed);
+}
+
+getGPX('GPX/2020_01_24_la_fava.gpx');
+*/
+// var gpx = 'GPX/2020_01_24_la_fava.gpx';
+/*
+new L.GPX(gpx, {async: true}).on('loaded', function(e) {
+  map.fitBounds(e.target.getBounds());
+}).addTo(map);
+*/
+
+/*
+
+********
+*** MANUALLY ADD MARKERS
+********
 // Array
 let ski_touring = [
     [45.87897, 7.15738, "Pointe de Drône (2949m)"],
@@ -133,6 +228,9 @@ for (var i = 0; i < ski_touring.length; i++) {
     });
 
 }
+*/
+
+
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
