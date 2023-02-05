@@ -20,49 +20,135 @@
   }
 */
 
+/*************************************************************************************************/
+
+/* BASELINE SCREEN */
+
 #map_wrapper {
-    width: 500px;
-    border: 1px solid black;
-    overflow: hidden; /* will contain if #first is longer than #second */
+    border: 0px solid black;
+    overflow: hidden;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+#map_container {
+  background-color: var(--bg-color-1);
+  position: relative;
+  width: auto;
+  height: 300px;
+  top:-0px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+#map{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 2px solid var(--bg-color-1);
+  width: 100%;
 }
 
 #map_text {
-    padding-left: 40px;
+    padding-left: 0px;
     overflow: hidden;
     color: var(--bg-color-1);
     text-align: justify;
 }
 
-#map_container {
-  background-color: var(--bg-color-1); /*rgba(120, 130, 145, 1);*/
-  position: relative;
-  width: 450px;
-  height: 480px;
-  float:left; /* add this */
-  top:-0px;
-  margin-bottom: 60px;
+/*************************************************************************************************/
+
+
+/* SCREEN - 300px */
+
+@media screen and (min-width: 300px) {
+  #map_container {
+    height: 300px;
+  }
 }
 
+/* SCREEN - 400px */
+
+@media screen and (min-width: 400px) {
+  #map_container {
+    height: 400px;
+  }
+}
+
+/* SCREEN - 800px */
+
+@media screen and (min-width: 900px) {
+  #map_wrapper {
+    overflow: hidden;
+  }
+  #map_text {
+      float:left;
+      width: 50%;
+      padding-right: 30px;
+  }
+  #map_container {
+    overflow: hidden;
+    width: 50%;
+    height: 400px;
+  }
+}
+
+
+/*************************************************************************************************/
+
+/*
 #map {
   position: absolute;
   top: 50%;
   right :50%;
   transform: translateY(-50%) translateX(+50%);
-  width: 430px;
-  height: 460px;
+  height: 240px;
+  width: 230px;
+  height: 230px;
 }
+*/
 
-@media screen and (min-width: 400px) {
+/*************************************************************************************************/
+
+
+/*
+/* SCREEN - 350px */
+/*
+@media screen and (min-width: 350px) {
+
   #map_container {
-    width: 380px;
-    height: 480px;
+    width: 300px;
+    height: 300px;
   }
+
   #map {
-    width: 360px;
-    height: 460px;
+    width: 290px;
+    height: 290px;
   }
+
 }
 
+/*************************************************************************************************/
+
+/* SCREEN - 400px */
+/*
+@media screen and (min-width: 400px) {
+
+  #map_container {
+    width: 350px;
+    height: 350px;
+  }
+
+  #map {
+    width: 340px;
+    height: 340px;
+  }
+
+}
+*/
+/*************************************************************************************************/
+
+/*
 @media screen and (min-width: 500px) {
   #map_container {
     width: 470px;
@@ -128,6 +214,18 @@
     height: 430px;
   }
 }
+*/
+/*
+#map_container {
+  background-color: var(--bg-color-1);
+  position: relative;
+  width: 270px;
+  height: 270px;
+  float:left;
+  top:-0px;
+  margin-bottom: 0px;
+}
+*/
 
 .leaflet-marker-icon {
     opacity: 0.90;
