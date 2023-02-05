@@ -25,10 +25,13 @@
 /* BASELINE SCREEN */
 
 #map_wrapper {
+    margin-top: -40px;
     border: 0px solid black;
     overflow: hidden;
     margin-left : 20px;
     margin-right : 20px;
+    background-color: rgba(195,210,230,0.2);
+    padding: 30px;
 }
 
 #map_container {
@@ -45,7 +48,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  border: 2px solid var(--bg-color-1);
+  border: 3px solid var(--bg-color-1);
   width: 100%;
 }
 
@@ -62,6 +65,9 @@
 /* SCREEN - 300px */
 
 @media screen and (min-width: 300px) {
+  #map_wrapper {
+    margin-top: -20px;
+  }
   #map_container {
     height: 300px;
   }
