@@ -8,12 +8,4 @@
 	padding: 0;
 }
 
-@media screen and (max-width: 736px) {
-
-	#header {
-		height: 22em;
-		background: url("../../images/banner_1.jpg") center;
-		background-size: 1000px;
-	}
-
 }

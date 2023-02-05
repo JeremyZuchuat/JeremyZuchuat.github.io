@@ -1188,7 +1188,7 @@ button.style1:active,
 }
 
 .homepage #header {
-	height: 37em;
+	height: 32em;
 }
 
 /***************************************************************************************************************************************
@@ -1365,7 +1365,7 @@ body.is-preload #banner_text_home h1 {
 		display: block;
 		font-weight: 100;
 		letter-spacing: 0.2em;
-		font-size: 1.1em;
+		font-size: 1em;
 		padding: 0em 2em 0em 2em;
 
 		/* TRANSITION */
@@ -1836,14 +1836,14 @@ body.is-preload #banner_text_home p {
 
  		/* Navigation bar */
 
-		@media screen and (max-width: 1020px) and (min-width: 737px) {
+	@media screen and (max-width: 1020px) and (min-width: 737px) {
 
-				#footer .feature-list > .row > :nth-child(2) > section {
-					border-top: 0;
-					padding-top: 0;
-				}
+			#footer .feature-list > .row > :nth-child(2) > section {
+				border-top: 0;
+				padding-top: 0;
+			}
 
-		}
+	}
 
 	@media screen and (max-width: 1020px) {
 
@@ -2126,8 +2126,7 @@ body.is-preload #banner_text_home p {
 	***/
 
 	#header {
-		height: 22em;
-		background: url("../../images/banner_0.jpg") center;
+		height: 18em;
 		background-size: 1000px;
 	}
 
@@ -2140,7 +2139,7 @@ body.is-preload #banner_text_home p {
 	***/
 
 	#banner_text {
-			width: 70%;
+			width: 75%;
 			text-align: justify;
 			margin-top: 2em;
 			padding: 2em 0em 2em 0em;
@@ -2162,11 +2161,14 @@ body.is-preload #banner_text_home p {
 	}
 
 	#banner_text_home h1 {
-			font-size: 1.5em;
+			font-size: 1.3em;
+			margin-bottom: 0px;
+			padding-bottom: 1em;
 	}
 
 	#banner_text_home p {
-			font-size: 0.9em;
+			margin-top: 0px;
+			font-size: 0.8em;
 	}
 
 		/* Feature List */
