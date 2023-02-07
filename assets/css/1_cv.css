@@ -195,12 +195,12 @@
 	}
 	.cv_sidebar_content > .col-image-cv-text {
 		float: none;
-		margin-left: 5em;
+		margin-left: 30%;
 		margin-top: 0em;
 	}
 	.cv_sidebar_content > .col-image-cv-expertise {
 		margin-top: 0em;
-		margin-left: 5em;
+		margin-left: 30%;
 		float: none;
 	}
 	#cv_sidebar .col-image-cv {
