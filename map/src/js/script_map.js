@@ -91,8 +91,10 @@ async function getData(path) {
                               + table[i].Strava
                               + "' target='_blank'><u>Strava</u></a> "
                               + "or read  <i class='fas fa-mountain'></i>"
-                              + " <a href = 'https://drive.google.com/file/d/1c0o5QvSvdYwgVWgPSdxhrpg1v5SYytnM/view?usp=sharing' target='_blank'><u>Topo</u></a> "
-                              );
+                              + " <a href = '"
+                              + table[i].Topo
+                              + "' target='_blank'><u>Topo</u></a> "
+                            );
 
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
