@@ -81,8 +81,37 @@ async function getData(path) {
       }).addTo(mymap);
 
       // Popup
-      marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)");
+      /* marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)"); */
 
+      // Popup
+      marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte);
+                              + "See <i class='fab fa-strava'></i>"
+                              + " <a href = '"
+                              + table[i].Strava
+                              + "' target='_blank'><u>Strava</u></a> "
+                              + "or read  <i class='fas fa-mountain'></i>"
+                              + " <a href = 'https://drive.google.com/file/d/1c0o5QvSvdYwgVWgPSdxhrpg1v5SYytnM/view?usp=sharing' target='_blank'><u>Topo</u></a> "
+                              );
+
+      // Marker mouseover : Highlight
+      marker.on('mouseover', function(e) {
+        this.openPopup();
+        e.target.setIcon(mountain_logo_red_H);
+      });
+
+      // Marker mouseout : De-Highlight
+      marker.on('mouseout', function(e) {
+        /*this.closePopup();*/
+        e.target.setIcon(mountain_logo_red);
+      });
+
+      // Click
+      marker.on('click', function(e) {
+        this.openPopup();
+        e.target.setIcon(mountain_logo_red_H);
+      });
+
+/*
       // Click
       function onClick(e) {
           console.log(this.options.win_url);
@@ -91,12 +120,12 @@ async function getData(path) {
 
       marker.on('click', onClick);
 
-/*
+
       console.log(table[i].Strava);
       marker.on('click', function(e) {
         window.open(table[i].Strava);
       })
-*/
+
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
         this.openPopup();
@@ -110,7 +139,7 @@ async function getData(path) {
         e.target.setIcon(mountain_logo_blue);
         // marker.removeClass(e.target.getElement(), 'leaflet-marker-hover');
       });
-
+*/
     }
 
 }
@@ -122,8 +151,8 @@ getData('map/information/info_touring.csv')
 
 // Array
 let ski_touring = [
-    [45.87897, 7.15738, "Pointe de Drône (2949m)"],
-    [45.89517, 7.07661, "Tête de Ferret (2713m)"]
+    [45.87897, 7.15738, "Pointe de Drône (2949m)", "AD"],
+    [45.89517, 7.07661, "Tête de Ferret (2713m)", "PD+"]
 ];
 
 // Create each marker
@@ -135,7 +164,12 @@ for (var i = 0; i < ski_touring.length; i++) {
     }).addTo(mymap);
 
     // Popup
-    marker.bindPopup("<b>" + ski_touring[i][2] + "</b>");
+    marker.bindPopup("<b>"  + ski_touring[i][2] + "</b>" + ", " + ski_touring[i][3] + "</br>"
+                            + "See <i class='fab fa-strava'></i>"
+                            + " <a href = 'https://drive.google.com/file/d/1c0o5QvSvdYwgVWgPSdxhrpg1v5SYytnM/view?usp=sharing' target='_blank'><u>Strava</u></a> "
+                            + "or read  <i class='fas fa-mountain'></i>"
+                            + " <a href = 'https://drive.google.com/file/d/1c0o5QvSvdYwgVWgPSdxhrpg1v5SYytnM/view?usp=sharing' target='_blank'><u>Topo</u></a> "
+                            );
 
     // Marker mouseover : Highlight
     marker.on('mouseover', function(e) {
@@ -145,8 +179,14 @@ for (var i = 0; i < ski_touring.length; i++) {
 
     // Marker mouseout : De-Highlight
     marker.on('mouseout', function(e) {
-      this.closePopup();
+      /*this.closePopup();*/
       e.target.setIcon(mountain_logo_red);
+    });
+
+    // Click
+    marker.on('click', function(e) {
+      this.openPopup();
+      e.target.setIcon(mountain_logo_red_H);
     });
 
 }
@@ -155,6 +195,7 @@ for (var i = 0; i < ski_touring.length; i++) {
 //---------------------------------------------------------------------------------------------------------------------------------
 
 /* 3. POPUP */
+/*
 var popup = L.popup();
 
 function onMapClick(e) {
@@ -165,7 +206,7 @@ function onMapClick(e) {
 }
 
 mymap.on('click', onMapClick);
-
+*/
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
 
