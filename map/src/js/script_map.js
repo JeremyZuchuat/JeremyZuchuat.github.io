@@ -85,7 +85,7 @@ async function getData(path) {
 
       // Popup
 
-      marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte
+      marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
                               + "See <i class='fab fa-strava'></i>"
                               + " <a href = '"
                               + table[i].Strava
@@ -97,19 +97,19 @@ async function getData(path) {
       // Marker mouseover : Highlight
       marker.on('mouseover', function(e) {
         this.openPopup();
-        e.target.setIcon(mountain_logo_red_H);
+        e.target.setIcon(mountain_logo_blue_H);
       });
 
       // Marker mouseout : De-Highlight
       marker.on('mouseout', function(e) {
         /*this.closePopup();*/
-        e.target.setIcon(mountain_logo_red);
+        e.target.setIcon(mountain_logo_blue);
       });
 
       // Click
       marker.on('click', function(e) {
         this.openPopup();
-        e.target.setIcon(mountain_logo_red_H);
+        e.target.setIcon(mountain_logo_blue_H);
       });
 
 /*
@@ -149,7 +149,7 @@ getData('map/information/info_touring.csv')
 
 
 // MANUALLY ADD MARKERS
-
+/*
 // Array
 let ski_touring = [
     [45.87897, 7.15738, "Pointe de Drône (2949m)", "AD"],
@@ -180,7 +180,7 @@ for (var i = 0; i < ski_touring.length; i++) {
 
     // Marker mouseout : De-Highlight
     marker.on('mouseout', function(e) {
-      /*this.closePopup();*/
+      this.closePopup();
       e.target.setIcon(mountain_logo_red);
     });
 
@@ -191,7 +191,7 @@ for (var i = 0; i < ski_touring.length; i++) {
     });
 
 }
-
+*/
 //---------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------
 
