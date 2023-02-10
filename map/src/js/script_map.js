@@ -84,7 +84,8 @@ async function getData(path) {
       /* marker.bindPopup("<b>" + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.)"); */
 
       // Popup
-      marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte);
+
+      marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte
                               + "See <i class='fab fa-strava'></i>"
                               + " <a href = '"
                               + table[i].Strava
