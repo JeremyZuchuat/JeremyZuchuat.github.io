@@ -132,6 +132,11 @@
   display: block;
 }
 
+#photo_menu p {
+	font-size: 1.1em;
+	text-align : justify;
+}
+
 #photo_menu .container {
   padding-left: 50px;
   padding-right: 50px;
@@ -149,6 +154,9 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+	#photo_menu p {
+		font-size: 1.0em;
+	}
 }
 
 @media (max-width: 736px) {
