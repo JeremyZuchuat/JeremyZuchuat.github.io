@@ -517,7 +517,7 @@ width: 90%;
 
 #highlights .highlight {
 	text-align: center;
-	margin: 0em 0em 0em 0em;
+	margin: 0em 0em -0.5em 0em;
 	max-width: 35em;
 	margin-left: auto;
 	margin-right: auto;
@@ -532,9 +532,11 @@ width: 90%;
 }
 
 #highlights .highlight p {
-	margin: 0 0 -1em 0;
+	margin: auto;
+	margin-bottom: -1.5em;
 	padding : 0 2em 0 2em;
 	color :  var(--button_color_1a);
+	width : 18em;
 }
 
 /***************************************************************************************************************************************
@@ -609,9 +611,11 @@ button.style1:active,
 	button,
 	.button {
 		/* Layout */
-		min-width: 25em;
+		min-width: 55% ; 25em;
 	}
 }
+
+
 
 /***************************************************************************************************************************************
 ***************************************************************************************************************************************/

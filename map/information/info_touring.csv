@@ -1,27 +1,27 @@
-File,Course,Difficulte,X_map,Y_map,Elevation_max,X_norm,Y_norm,Latitude,Longitude,Strava
-2020_01_24_la_fava,La Fava,PD+,2587775,1127888,2582,-0.012225,-0.072112,46.3023,7.2800,https://www.strava.com/activities/3039229047
-2020_01_26_grand_chateau,Grand Château,PD+,2575499,1115466,2497,-0.024501,-0.084534,46.1902,7.1213,https://www.strava.com/activities/3044921673
-2020_03_14_pas_de_lovegno,Pas de Lovégno,F,2603968,1113849,2696,0.003968,-0.086151,46.1761,7.4900,https://www.strava.com/activities/3182130162
-2021_01_23_pizzo_del_naret,Pizzo del Narèt,PD,2685614,1147896,2588,0.085614,-0.052104,46.4769,8.5532,https://www.strava.com/activities/4668090302
-2021_01_24_quotta_2501,Quotta 2501,F,2677389,1146310,2498,0.077389,-0.05369,46.4636,8.4459,https://www.strava.com/activities/4673320632
-2021_02_27_sublage,Le Sublage,PD+,2590400,1130350,2735,-0.0096,-0.06965,46.3245,7.3140,https://www.strava.com/activities/4816617532
-2021_03_07_pointe_tourtemagne,Pointe de Tourtemagne,PD+,2617224,1117004,3082,0.017224,-0.082996,46.2043,7.6617,https://www.strava.com/activities/4899502921
-2021_03_14_mont_etoile,Mont de l'étoile,AD,2600892,1102483,3369,0.000892,-0.097517,46.0739,7.4502,https://www.strava.com/activities/4939616896
-2021_03_20_pointe_du_tsate,Pointe du Tsaté,PD,2608528,1106436,3078,0.008528,-0.093564,46.1094,7.5489,https://www.strava.com/activities/4977530554
-2021_04_02_mont_blanc_de_cheilon,Mont Blanc de Cheilon,AD,2598348,1093508,3870,-0.001652,-0.106492,45.9931,7.4173,https://www.strava.com/activities/5055267051
-2021_04_05_tete_de_ferret,Tête de Ferret,PD+,2571900,1082684,2713,-0.0281,-0.117316,45.8952,7.0767,https://www.strava.com/activities/5072287424
-2021_04_11_arpelistock,Arpelistock,AD,2590499,1132504,3036,-0.009501,-0.067496,46.3439,7.3152,https://www.strava.com/activities/5107851920
-2021_04_17_pointe_d_aufalle,Pointe d'Aufalle,AD,2575020,1118460,2727,-0.02498,-0.08154,46.2171,7.1150,https://www.strava.com/activities/5141193565
-2021_04_24_pointe_de_drone,Pointe de Drône,AD+,2578160,1080855,2949,-0.02184,-0.119145,45.8790,7.1574,https://www.strava.com/activities/5182390441
-2021_12_18_monts_telliers,Monts Telliers,PD,2577231,1083014,2951,-0.022769,-0.116986,45.8984,7.1454,https://www.strava.com/activities/6398279771
-2022_01_15_le_metailler,Le Métailler,PD,2593948,1105836,3212,-0.006052,-0.094164,46.1040,7.3604,https://www.strava.com/activities/6526763731
-2022_01_22_rottallihorn,Rottällihorn,PD+,2678745,1155192,2914,0.078745,-0.044808,46.5434,8.4651,https://www.strava.com/activities/6563772270
-2022_01_30_l_omen_roso,L'Omen Roso,PD,2617109,1113683,3031,0.017109,-0.086317,46.1744,7.6601,https://www.strava.com/activities/6606663069
-2022_02_06_palantse_de_la_cretta,La Palantse de la Cretta,F,2602000,1104748,2929,0.002,-0.095252,46.0942,7.4645,https://www.strava.com/activities/6639544210
-2022_02_12_mont_buet,Le Mont Buet,PD+,2554615,1097195,3096,-0.045385,-0.102805,46.0248,6.8526,https://www.strava.com/activities/6670497653
-2022_02_26_wildhorn,Wildhorn,PD+,2594010,1133710,3250,-0.00599,-0.06629,46.3547,7.3608,https://www.strava.com/activities/6740413720
-2022_03_08_schwarzhorn,Schwarzhorn - Leuk,PD+,2610882,1136997,3105,0.010882,-0.063003,46.3843,7.5801,https://www.strava.com/activities/6791594863
-2022_03_09_wildstrubel,Wildstrubel/Lenkerstrubel,PD,2606923,1138777,3244,0.006923,-0.061223,46.4003,7.5286,https://www.strava.com/activities/6796656000
-2023_01_22_vouasson,Pointe de la Vouasson ,AD-,2598933,1102197,3488,-0.001067,-0.097803,46.0713,7.4249,https://www.strava.com/activities/8428110546
-2023_01_29_scex_rouge,Sé Rouge ,AD-,2595189,1131288,2893,-0.004811,-0.068712,46.3330,7.3762,https://www.strava.com/activities/8471281301
-2023_02_04_pointe_de_chemo,Pointe de Chémo,AD-,2577425,1119163,2628,-0.022575,-0.080837,46.2235,7.1461,https://www.strava.com/activities/8503510833
+File,Course,Difficulte,X_map,Y_map,Elevation_max,X_norm,Y_norm,Latitude,Longitude,Strava,Topo
+2020_01_24_la_fava,La Fava,PD+,2587775,1127888,2582,-0.012225,-0.072112,46.3023,7.2800,https://www.strava.com/activities/3039229047,https://drive.google.com/file/d/1Hu3X__TEPp7OAq_t3scXDpCuvrVkUdDy/view?usp=sharing
+2020_01_26_grand_chateau,Grand Château,PD+,2575499,1115466,2497,-0.024501,-0.084534,46.1902,7.1213,https://www.strava.com/activities/3044921673,https://drive.google.com/file/d/1HypmHwMSUVjZ1uyV5kUP7KrV7PTcyk7U/view?usp=sharing
+2020_03_14_pas_de_lovegno,Pas de Lovégno,F,2603968,1113849,2696,0.003968,-0.086151,46.1761,7.4900,https://www.strava.com/activities/3182130162,https://drive.google.com/file/d/1I25mlBSbyQwcoEWm6El_JXvcit4YObgE/view?usp=sharing
+2021_01_23_pizzo_del_naret,Pizzo del Narèt,PD,2685614,1147896,2588,0.085614,-0.052104,46.4769,8.5532,https://www.strava.com/activities/4668090302,https://drive.google.com/file/d/1KyjRSAkyeiuXar663dX3PWUb8nMUlPg6/view?usp=sharing
+2021_01_24_quotta_2501,Quotta 2501,F,2677389,1146310,2498,0.077389,-0.05369,46.4636,8.4459,https://www.strava.com/activities/4673320632,https://drive.google.com/file/d/1Ksf7Lqj62UoaPd4T6KId2SBB1zZMeB5e/view?usp=sharing
+2021_02_27_sublage,Le Sublage,PD+,2590400,1130350,2735,-0.0096,-0.06965,46.3245,7.3140,https://www.strava.com/activities/4816617532,https://drive.google.com/file/d/1KtGpbiPPLR0fpzfTWnNhfU7Dcv3xjPr5/view?usp=sharing
+2021_03_07_pointe_tourtemagne,Pointe de Tourtemagne,PD+,2617224,1117004,3082,0.017224,-0.082996,46.2043,7.6617,https://www.strava.com/activities/4899502921,https://drive.google.com/file/d/1Kl3TXbqPQWwzrCBLAOgGKFh_h906PKns/view?usp=sharing
+2021_03_14_mont_etoile,Mont de l'étoile,AD,2600892,1102483,3369,0.000892,-0.097517,46.0739,7.4502,https://www.strava.com/activities/4939616896,https://drive.google.com/file/d/1LMsmzPwVm6CEbkKsoLK1lAQ2O0etHwZx/view?usp=sharing
+2021_03_20_pointe_du_tsate,Pointe du Tsaté,PD,2608528,1106436,3078,0.008528,-0.093564,46.1094,7.5489,https://www.strava.com/activities/4977530554,https://drive.google.com/file/d/1LXrgUVYsUWZKe50Vz5TxYi-ufI5Pw4e0/view?usp=sharing
+2021_04_02_mont_blanc_de_cheilon,Mont Blanc de Cheilon,AD,2598348,1093508,3870,-0.001652,-0.106492,45.9931,7.4173,https://www.strava.com/activities/5055267051,https://drive.google.com/file/d/1LG1aegazV0xZPmCladEFqQ0DjZzBfUxu/view?usp=sharing
+2021_04_05_tete_de_ferret,Tête de Ferret,PD+,2571900,1082684,2713,-0.0281,-0.117316,45.8952,7.0767,https://www.strava.com/activities/5072287424,https://drive.google.com/file/d/1LX4HySl8MaYJKGf24JFVmjB6A9e_7YB8/view?usp=sharing
+2021_04_11_arpelistock,Arpelistock,AD,2590499,1132504,3036,-0.009501,-0.067496,46.3439,7.3152,https://www.strava.com/activities/5107851920,https://drive.google.com/file/d/1LNtKkUHkPjBvF-8Q166GIx5BltvgnxXZ/view?usp=sharing
+2021_04_17_pointe_d_aufalle,Pointe d'Aufalle,AD,2575020,1118460,2727,-0.02498,-0.08154,46.2171,7.1150,https://www.strava.com/activities/5141193565,https://drive.google.com/file/d/1LauILLh5UU3Q6FV5Qxa-rbfPCoMmUdAa/view?usp=sharing
+2021_04_24_pointe_de_drone,Pointe de Drône,AD+,2578160,1080855,2949,-0.02184,-0.119145,45.8790,7.1574,https://www.strava.com/activities/5182390441,https://drive.google.com/file/d/1M5ssL3nOJ-cZHvKAajxtyBxGwEj7TAFR/view?usp=sharing
+2021_12_18_monts_telliers,Monts Telliers,PD,2577231,1083014,2951,-0.022769,-0.116986,45.8984,7.1454,https://www.strava.com/activities/6398279771,https://drive.google.com/file/d/1L_tzvlOlkSTAy5dt9e8_UQRtvqiPMu0V/view?usp=sharing
+2022_01_15_le_metailler,Le Métailler,PD,2593948,1105836,3212,-0.006052,-0.094164,46.1040,7.3604,https://www.strava.com/activities/6526763731,https://drive.google.com/file/d/1Lf5KAxl2Jw2mGPJqnODdFxiTYNNwbgMW/view?usp=sharing
+2022_01_22_rottallihorn,Rottällihorn,PD+,2678745,1155192,2914,0.078745,-0.044808,46.5434,8.4651,https://www.strava.com/activities/6563772270,https://drive.google.com/file/d/1M4gqk884edpTIqijre2_37-ByVr_Ajjc/view?usp=sharing
+2022_01_30_l_omen_roso,L'Omen Roso,PD,2617109,1113683,3031,0.017109,-0.086317,46.1744,7.6601,https://www.strava.com/activities/6606663069,https://drive.google.com/file/d/1MLOZN4h1GbRVAZhKC0s10n1oT2D8I5by/view?usp=sharing
+2022_02_06_palantse_de_la_cretta,La Palantse de la Cretta,F,2602000,1104748,2929,0.002,-0.095252,46.0942,7.4645,https://www.strava.com/activities/6639544210,https://drive.google.com/file/d/1MLRUyCDVzEcn3koXN7E7i_YswkXDiaax/view?usp=sharing
+2022_02_12_mont_buet,Le Mont Buet,PD+,2554615,1097195,3096,-0.045385,-0.102805,46.0248,6.8526,https://www.strava.com/activities/6670497653,https://drive.google.com/file/d/1M4ibXUPmowSGX-M9746IE7qz2tfr2_qS/view?usp=sharing
+2022_02_26_wildhorn,Wildhorn,PD+,2594010,1133710,3250,-0.00599,-0.06629,46.3547,7.3608,https://www.strava.com/activities/6740413720,https://drive.google.com/file/d/1M9K1KKWqH7HD_ALDQrD45Y7cMWRS-UpC/view?usp=sharing
+2022_03_08_schwarzhorn,Schwarzhorn - Leuk,PD+,2610882,1136997,3105,0.010882,-0.063003,46.3843,7.5801,https://www.strava.com/activities/6791594863,https://drive.google.com/file/d/1Hl9Z7pDv5a7A8Iwapa5uYczwSbOuFwu_/view?usp=sharing
+2022_03_09_wildstrubel,Wildstrubel/Lenkerstrubel,PD,2606923,1138777,3244,0.006923,-0.061223,46.4003,7.5286,https://www.strava.com/activities/6796656000,https://drive.google.com/file/d/1HnOq_v4VO5SqKH-mERwdrYkvKXvBFSy7/view?usp=sharing
+2023_01_22_vouasson,Pointe de la Vouasson ,AD-,2598933,1102197,3488,-0.001067,-0.097803,46.0713,7.4249,https://www.strava.com/activities/8428110546,
+2023_01_29_scex_rouge,Sé Rouge ,AD-,2595189,1131288,2893,-0.004811,-0.068712,46.3330,7.3762,https://www.strava.com/activities/8471281301,
+2023_02_04_pointe_de_chemo,Pointe de Chémo,AD-,2577425,1119163,2628,-0.022575,-0.080837,46.2235,7.1461,https://www.strava.com/activities/8503510833,
