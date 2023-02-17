@@ -22,15 +22,15 @@
 
 #photo_gallery header {
   text-align: center;
-  margin: 0em 10% 6em 10%;
+  margin: 0em 10.5% 2em 10.5%;
 }
 
 #photo_gallery header h2 {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.8em;
   letter-spacing: 0.075em;
   line-height: 1.5em;
-  margin: 0em 0em 1em 0em;
+  margin: 0em 0em 0.75em 0em;
 }
 
 #photo_gallery header p {
@@ -38,7 +38,7 @@
     color: #b1b4b9;
     display: block;
     margin: 0em;
-    font-size: 1.1em;
+    font-size: 1em;
     letter-spacing: 0.075em;
     line-height: 1.5em;
   }
@@ -132,9 +132,19 @@
   display: block;
 }
 
+#photo_menu p {
+	font-size: 1.05em;
+	text-align : justify;
+}
+
 #photo_menu .container {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+#photo_menu header {
+  text-align: center;
+  margin: 0em 0.5% 0em 0.5%;
 }
 
 @media (max-width: 1280px) {
@@ -149,6 +159,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+	#photo_menu p {
+		font-size: 1.0em;
+	}
+	#photo_gallery header {
+		margin-bottom: 5em;
+	}
 }
 
 @media (max-width: 736px) {
@@ -156,6 +172,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+	#photo_menu header {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
 }
 
 @media (max-width: 600px) {
@@ -897,7 +917,7 @@ a.active {
 }
 
 #photo_menu header {
-  margin-top: -3em;
+  margin-top: -4em;
 }
 
 /****
