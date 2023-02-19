@@ -115,6 +115,69 @@ async function getData(path) {
 
 getData('map/information/info_touring.csv')
 
+//------------------------------------------------------------------------------
+
+// Read array (ONLY SERVER)
+async function getData(path) {
+
+    // IMPORT CSV
+  console.log("IMPORT TEXT CSV:");
+  const response = await fetch(path);
+  const data = await response.text();
+  console.log(data);
+
+  // PARSE CSV
+  console.log("PARSE TEXT CSV:");
+  var table =  Papa.parse(data,{
+    header : true
+  });
+  var table = table.data
+  console.log(table);
+
+  // MARKERS AND GPX
+  for (var i = 0; i < table.length; i++) {
+
+    // MARKERS - SKI TOUR
+
+    // Get marker's geolocalisation
+    var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+          icon: mountain_logo_red,
+          win_url: table[i].Strava
+    }).addTo(mymap);
+
+    // Popup
+
+    marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
+                            + "See <i class='fab fa-strava'></i>"
+                            + " <a href = '"
+                            + table[i].Strava
+                            + "' target='_blank'><u>Strava</u></a> "
+                          );
+
+    // Marker mouseover : Highlight
+    marker.on('mouseover', function(e) {
+      this.openPopup();
+      e.target.setIcon(mountain_logo_red_H);
+    });
+
+    // Marker mouseout : De-Highlight
+    marker.on('mouseout', function(e) {
+      /*this.closePopup();*/
+      e.target.setIcon(mountain_logo_red);
+    });
+
+    // Click
+    marker.on('click', function(e) {
+      this.openPopup();
+      e.target.setIcon(mountain_logo_red_H);
+    });
+
+  }
+
+}
+
+getDataBike('map/information/info_biking.csv')
+
 // MANUALLY ADD MARKERS
 /*
 // Array
