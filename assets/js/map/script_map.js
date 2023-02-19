@@ -51,7 +51,7 @@ var mountain_logo_blue_H = L.icon({
 });
 
 // Read array (ONLY SERVER)
-async function getData(path,typeMarker) {
+async function getData(path) {
 
     // IMPORT CSV
   console.log("IMPORT TEXT CSV:");
@@ -70,100 +70,50 @@ async function getData(path,typeMarker) {
   // MARKERS AND GPX
   for (var i = 0; i < table.length; i++) {
 
-  //------------------------------------------------------------------------------------------
+    // MARKERS - SKI TOUR
 
-    if (typeMarker == "ski_touring") {
-
-        // MARKERS - SKI TOUR
-
-        // Get marker's geolocalisation
-        var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+    // Get marker's geolocalisation
+    var marker = L.marker([table[i].Latitude, table[i].Longitude], {
           icon: mountain_logo_blue,
           win_url: table[i].Strava
-        }).addTo(mymap);
+    }).addTo(mymap);
 
-        // Popup
+    // Popup
 
-        marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
-                                + "See <i class='fab fa-strava'></i>"
-                                + " <a href = '"
-                                + table[i].Strava
-                                + "' target='_blank'><u>Strava</u></a> "
-                                + "or read  <i class='fas fa-mountain'></i>"
-                                + " <a href = '"
-                                + table[i].Topo
-                                + "' target='_blank'><u>Topo</u></a> "
-                              );
+    marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
+                            + "See <i class='fab fa-strava'></i>"
+                            + " <a href = '"
+                            + table[i].Strava
+                            + "' target='_blank'><u>Strava</u></a> "
+                            + "or read  <i class='fas fa-mountain'></i>"
+                            + " <a href = '"
+                            + table[i].Topo
+                            + "' target='_blank'><u>Topo</u></a> "
+                          );
 
-        // Marker mouseover : Highlight
-        marker.on('mouseover', function(e) {
-          this.openPopup();
-          e.target.setIcon(mountain_logo_blue_H);
-        });
+    // Marker mouseover : Highlight
+    marker.on('mouseover', function(e) {
+      this.openPopup();
+      e.target.setIcon(mountain_logo_blue_H);
+    });
 
-        // Marker mouseout : De-Highlight
-        marker.on('mouseout', function(e) {
-          /*this.closePopup();*/
-          e.target.setIcon(mountain_logo_blue);
-        });
+    // Marker mouseout : De-Highlight
+    marker.on('mouseout', function(e) {
+      /*this.closePopup();*/
+      e.target.setIcon(mountain_logo_blue);
+    });
 
-        // Click
-        marker.on('click', function(e) {
-          this.openPopup();
-          e.target.setIcon(mountain_logo_blue_H);
-        });
+    // Click
+    marker.on('click', function(e) {
+      this.openPopup();
+      e.target.setIcon(mountain_logo_blue_H);
+    });
 
-      }
-
-    //------------------------------------------------------------------------------------------
-
-      if (typeMarker == "biking") {
-
-          // MARKERS - SKI TOUR
-
-          // Get marker's geolocalisation
-          var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-            icon: mountain_logo_red,
-            win_url: table[i].Strava
-          }).addTo(mymap);
-
-          // Popup
-
-          marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + "</br>"
-                                  + "See <i class='fab fa-strava'></i>"
-                                  + " <a href = '"
-                                  + table[i].Strava
-                                  + "' target='_blank'><u>Strava</u></a> "
-                                );
-
-          // Marker mouseover : Highlight
-          marker.on('mouseover', function(e) {
-            this.openPopup();
-            e.target.setIcon(mountain_logo_red_H);
-          });
-
-          // Marker mouseout : De-Highlight
-          marker.on('mouseout', function(e) {
-            /*this.closePopup();*/
-            e.target.setIcon(mountain_logo_red);
-          });
-
-          // Click
-          marker.on('click', function(e) {
-            this.openPopup();
-            e.target.setIcon(mountain_logo_red_H);
-          });
-
-      }
-
-    //------------------------------------------------------------------------------------------
-
-    }
+  }
 
 }
 
-getData('map/information/info_touring.csv', 'ski_touring')
-getData('map/information/info_biking.csv', 'biking')
+getData('map/information/info_touring.csv')
 
 // MANUALLY ADD MARKERS
 /*
