@@ -118,7 +118,7 @@ getData('map/information/info_touring.csv')
 //------------------------------------------------------------------------------
 
 // Read array (ONLY SERVER)
-async function getData(path) {
+async function getDataBike(path) {
 
     // IMPORT CSV
   console.log("IMPORT TEXT CSV:");
