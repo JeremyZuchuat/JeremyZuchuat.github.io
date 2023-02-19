@@ -140,14 +140,14 @@ async function getDataBike(path) {
     // MARKERS - SKI TOUR
 
     // Get marker's geolocalisation
-    var marker = L.marker([table[i].Latitude, table[i].Longitude], {
+    var markerBike = L.marker([table[i].Latitude, table[i].Longitude], {
           icon: mountain_logo_red,
           win_url: table[i].Strava
     }).addTo(mymap);
 
     // Popup
 
-    marker.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
+    markerBike.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
                             + "See <i class='fab fa-strava'></i>"
                             + " <a href = '"
                             + table[i].Strava
@@ -155,19 +155,19 @@ async function getDataBike(path) {
                           );
 
     // Marker mouseover : Highlight
-    marker.on('mouseover', function(e) {
+    markerBike.on('mouseover', function(e) {
       this.openPopup();
       e.target.setIcon(mountain_logo_red_H);
     });
 
     // Marker mouseout : De-Highlight
-    marker.on('mouseout', function(e) {
+    markerBike.on('mouseout', function(e) {
       /*this.closePopup();*/
       e.target.setIcon(mountain_logo_red);
     });
 
     // Click
-    marker.on('click', function(e) {
+    markerBike.on('click', function(e) {
       this.openPopup();
       e.target.setIcon(mountain_logo_red_H);
     });
