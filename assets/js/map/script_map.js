@@ -50,6 +50,19 @@ var mountain_logo_blue_H = L.icon({
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
+var bike_logo_green = L.icon({
+    iconUrl: 'map/icons/bike_logo_green.png',
+    iconSize:     [35, 35], // size of the icon
+    popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
+});
+
+var bike_logo_green_H = L.icon({
+    iconUrl: 'map/icons/bike_logo_green_light.png',
+    iconSize:     [35, 35], // size of the icon
+    popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
+});
+
+
 // Read array (ONLY SERVER)
 async function getData(path) {
 
@@ -141,7 +154,7 @@ async function getDataBike(path) {
 
     // Get marker's geolocalisation
     var markerBike = L.marker([tableBike[i].Latitude, tableBike[i].Longitude], {
-          icon: mountain_logo_red,
+          icon: bike_logo_green,
           win_url: tableBike[i].Strava
     }).addTo(mymap);
 
@@ -157,19 +170,19 @@ async function getDataBike(path) {
     // Marker mouseover : Highlight
     markerBike.on('mouseover', function(e) {
       this.openPopup();
-      e.target.setIcon(mountain_logo_red_H);
+      e.target.setIcon(bike_logo_green_H);
     });
 
     // Marker mouseout : De-Highlight
     markerBike.on('mouseout', function(e) {
       /*this.closePopup();*/
-      e.target.setIcon(mountain_logo_red);
+      e.target.setIcon(bike_logo_green);
     });
 
     // Click
     markerBike.on('click', function(e) {
       this.openPopup();
-      e.target.setIcon(mountain_logo_red_H);
+      e.target.setIcon(bike_logo_green_H);
     });
 
   }
