@@ -123,12 +123,12 @@ async function getDataBike(path) {
     // IMPORT CSV
   console.log("IMPORT TEXT CSV:");
   const response = await fetch(path);
-  const data = await response.text();
-  console.log(data);
+  const dataBike = await response.text();
+  console.log(dataBike);
 
   // PARSE CSV
   console.log("PARSE TEXT CSV:");
-  var tableBike =  Papa.parse(data,{
+  var tableBike =  Papa.parse(dataBike,{
     header : true
   });
   var tableBike = tableBike.data
