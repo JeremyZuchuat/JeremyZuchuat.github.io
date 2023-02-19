@@ -147,7 +147,7 @@ async function getDataBike(path) {
 
     // Popup
 
-    markerBike.bindPopup("<b>"  + tableBike[i].Course + "</b>" + " (" + tableBike[i].Elevation_max + "m.), " + tableBike[i].Difficulte + "</br>"
+    markerBike.bindPopup("<b>"  + tableBike[i].Course + "</b>" + " (" + tableBike[i].Elevation_max + "m.), " + "</br>"
                             + "See <i class='fab fa-strava'></i>"
                             + " <a href = '"
                             + tableBike[i].Strava
