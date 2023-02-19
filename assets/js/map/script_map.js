@@ -163,7 +163,7 @@ async function getData(path,typeMarker) {
 }
 
 getData('map/information/info_touring.csv', 'ski_touring')
-getData('map/information/info_touring.csv', 'biking')
+getData('map/information/info_biking.csv', 'biking')
 
 // MANUALLY ADD MARKERS
 /*
