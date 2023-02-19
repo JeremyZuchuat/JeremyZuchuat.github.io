@@ -128,29 +128,29 @@ async function getDataBike(path) {
 
   // PARSE CSV
   console.log("PARSE TEXT CSV:");
-  var table =  Papa.parse(data,{
+  var tableBike =  Papa.parse(data,{
     header : true
   });
-  var table = table.data
-  console.log(table);
+  var tableBike = tableBike.data
+  console.log(tableBike);
 
   // MARKERS AND GPX
-  for (var i = 0; i < table.length; i++) {
+  for (var i = 0; i < tableBike.length; i++) {
 
     // MARKERS - SKI TOUR
 
     // Get marker's geolocalisation
-    var markerBike = L.marker([table[i].Latitude, table[i].Longitude], {
+    var markerBike = L.marker([tableBike[i].Latitude, tableBike[i].Longitude], {
           icon: mountain_logo_red,
-          win_url: table[i].Strava
+          win_url: tableBike[i].Strava
     }).addTo(mymap);
 
     // Popup
 
-    markerBike.bindPopup("<b>"  + table[i].Course + "</b>" + " (" + table[i].Elevation_max + "m.), " + table[i].Difficulte + "</br>"
+    markerBike.bindPopup("<b>"  + tableBike[i].Course + "</b>" + " (" + tableBike[i].Elevation_max + "m.), " + tableBike[i].Difficulte + "</br>"
                             + "See <i class='fab fa-strava'></i>"
                             + " <a href = '"
-                            + table[i].Strava
+                            + tableBike[i].Strava
                             + "' target='_blank'><u>Strava</u></a> "
                           );
 
