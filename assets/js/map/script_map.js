@@ -123,7 +123,7 @@ async function getData(path,typeMarker) {
 
           // Get marker's geolocalisation
           var marker = L.marker([table[i].Latitude, table[i].Longitude], {
-            icon: mountain_logo_blue,
+            icon: mountain_logo_red,
             win_url: table[i].Strava
           }).addTo(mymap);
 
