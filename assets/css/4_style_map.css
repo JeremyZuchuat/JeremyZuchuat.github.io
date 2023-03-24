@@ -113,6 +113,18 @@
   }
 }
 
+@media screen and (min-width: 1700px) {
+  #map_container {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #map_container {
+    height: 650px;
+  }
+}
+
 
 
 
