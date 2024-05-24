@@ -1074,6 +1074,10 @@ button.style1:active,
 			color: rgba(255, 255, 255, 0.75);
 		}
 
+			.wrapper .project {
+				width: 100%;
+			}
+
 			.wrapper .style1 .title {
 				background: var(--wrap-color-1) ;
 				color: #fff;
@@ -1094,6 +1098,14 @@ button.style1:active,
 				margin-top: 0.5em;
 				color: #acb1b9;
 				font-size: 0.9em;
+				text-align: justify;
+			}
+
+			.wrapper .container .intro h1 {
+				color: #484d55;
+				margin-bottom: 1em;
+				font-size: 1.5em;
+				font-weight: lighter;
 				text-align: justify;
 			}
 

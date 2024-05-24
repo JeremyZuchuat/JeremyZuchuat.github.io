@@ -82,6 +82,12 @@
 		color: #484d55;
 }
 
+.cv ul {
+    /*border-bottom: 1px solid black;*/
+		padding-top: 0.25em;
+		margin-bottom: 0.5em;
+}
+
 /* IMAGE */
 
 #cv_sidebar img {
