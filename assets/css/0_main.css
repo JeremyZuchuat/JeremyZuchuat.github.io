@@ -2486,3 +2486,15 @@ body.is-preload #banner_text_home p {
 .lower{
   text-transform: lowercase
 }
+
+#link_project {
+	color : var(--bg-color-1);
+	text-decoration: underline;
+  	text-decoration-color: var(--bg-color-1);
+	font-weight: 300;
+	transition: 0.5s;
+  }
+
+#link_project:hover {
+	opacity: 0.5;
+}
