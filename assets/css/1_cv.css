@@ -3,7 +3,7 @@
 *****/
 
 #header {
-	background: url("../../images/banner_1.jpg") center;
+	background: url("../images/banner_1.jpg") center;
 	background-size: cover;
 	padding: 0;
 }
@@ -72,7 +72,7 @@
 
 .cv table {
     border-collapse: collapse;
-		color:  #b3b3b3; #c1c1c1;
+		color:  #b3b3b3; 
 		margin-bottom: 3em;
 }
 

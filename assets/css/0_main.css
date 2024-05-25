@@ -161,7 +161,7 @@ input, select, textarea {
 	}
 
 	body, input, textarea, select {
-		font-family: "Trebuchet MS", sans-serif ; 'Source Sans Pro', sans-serif;
+		font-family: "Trebuchet MS", sans-serif ;
 		font-weight: 400;
 		color: #919499;
 		font-size: 14pt;
@@ -611,7 +611,7 @@ button.style1:active,
 	button,
 	.button {
 		/* Layout */
-		min-width: 55% ; 25em;
+		min-width: 55% ; 
 	}
 }
 
@@ -921,7 +921,7 @@ button.style1:active,
 			.feature-list h3:before {
 				display: block;
 				color: #fff;
-				background: #2f333b url("images/overlay.png");
+				background: #2f333b url("../images/overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -1051,7 +1051,7 @@ button.style1:active,
 				left: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("../images/shadow.png");
 			}
 
 			.wrapper .title:after {
@@ -1065,7 +1065,7 @@ button.style1:active,
 				right: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("../images/shadow.png");
 			}
 
 		.wrapper.style1 {
@@ -1142,11 +1142,11 @@ button.style1:active,
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #f3f3f3 url("../images/overlay.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
+				background: #f3f3f3 url("../images/overlay.png");
 				color: #484d55;
 			}
 
@@ -1189,7 +1189,7 @@ button.style1:active,
 	position: relative;
 
 	height: 26em;
-	background: url("../../images/banner_0.jpg") center;
+	background: url("../images/banner_0.jpg") center;
 	background-size: cover;
 	padding: 0;
 }
@@ -1480,7 +1480,7 @@ body.is-preload #banner_text_home p {
 				}
 
 	.dropotron {
-		background: #222835 url("images/overlay.png");
+		background: #222835 url("../assets/assets/overlay.png");
 		background-color: rgba(44, 50, 63, 0.925);
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
@@ -1968,7 +1968,7 @@ body.is-preload #banner_text_home p {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730 url("../assets/assets/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
@@ -2235,19 +2235,8 @@ body.is-preload #banner_text_home p {
 					}
 */
 		/* Header */
-/*
-			#header {
-				height: 30em;
-				background: url("../../images/banner_small_screen.jpg");
-				background : red;
-			}
-
-			.homepage #header {
-				height: 50em;
-			}
-*/
 		/* Banner */
-//*
+/*
 			#banner_text {
 				text-align: center;
 				padding-left: 2em;

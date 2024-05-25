@@ -27,37 +27,37 @@ mymap.addLayer(tilelayer);
 // Define Markers Styles
 
 var mountain_logo_red = L.icon({
-    iconUrl: 'map/icons/mountain_logo_red.png',
+    iconUrl: '../assets/map/icons/mountain_logo_red.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_red_H = L.icon({
-    iconUrl: 'map/icons/mountain_logo_red_light.png',
+    iconUrl: '../assets/map/icons/mountain_logo_red_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_blue = L.icon({
-    iconUrl: 'map/icons/mountain_logo_blue.png',
+    iconUrl: '../assets/map/icons/mountain_logo_blue.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var mountain_logo_blue_H = L.icon({
-    iconUrl: 'map/icons/mountain_logo_blue_light.png',
+    iconUrl: '../assets/map/icons/mountain_logo_blue_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var bike_logo_green = L.icon({
-    iconUrl: 'map/icons/bike_logo_green.png',
+    iconUrl: '../assets/map/icons/bike_logo_green.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
 
 var bike_logo_green_H = L.icon({
-    iconUrl: 'map/icons/bike_logo_green_light.png',
+    iconUrl: '../assets/map/icons/bike_logo_green_light.png',
     iconSize:     [35, 35], // size of the icon
     popupAnchor:  [0,-20] // point from which the popup should open relative to the iconAnchor
 });
@@ -126,7 +126,7 @@ async function getData(path) {
 
 }
 
-getData('map/information/info_touring.csv')
+getData('../assets/map/information/info_touring.csv')
 
 //------------------------------------------------------------------------------
 
@@ -189,7 +189,7 @@ async function getDataBike(path) {
 
 }
 
-getDataBike('map/information/info_biking.csv')
+getDataBike('../assets/map/information/info_biking.csv')
 
 // MANUALLY ADD MARKERS
 /*
